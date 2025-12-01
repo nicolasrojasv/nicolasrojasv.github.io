@@ -1,16 +1,9 @@
-<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
-<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
+<!-- This HTML file provides my portfolio page. It contains the answers of the coding challenge from the Data Visualisation course -->
+<!-- It works with the nr_style css in this folder -->
 <!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
-<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
-
-<!-- Take a look around and make your own copy to adapt for your own use. -->
-
-<!-- This is a comment -->
-<!-- Comments are not displayed in the browser -->
-<!-- They can be used to leave notes in the code -->
 
 <!DOCTYPE html>
-<html> 
+<html lang = "en"> 
     <!-- HTML is heirarchial: tags like this define elements on the page. 
     Each tag does something different. For example:
         - The <html> tag defines the whole document.
@@ -24,135 +17,484 @@
 
     <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
     <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
-    <link rel="stylesheet" type="text/css" href="Example3.css">
-    <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
+    <title>Portfolio | Nicolas Rojas</title> <!-- The title displayed in the browser tab, not on the page itself -->    
 
     <!-- This is a link to the vega-lite which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-        
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="nr_style.css">
+
 </head>
 
 <body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Nicolas Rojas
-    </h1>
-    <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Nicolas Rojas | <a href="https://www.linkedin.com/in/nicolasrojasv/">LinkedIn</a> | <a
-            href="https://www.github.com/nicolasrojasv">GitHub</a>
-    </p >
-    <p style="text-align: justify;"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This project explores the use of data visualisation and data science techniques to transform raw data into meaningful insights. 
-        Using Python for data processing and analysis, and HTML/CSS/JavaScript (with JSON as the data exchange format) for presentation. 
-        The project will build an interactive web-based dashboard that displays graphs and visualisations around a not yet chosen theme. 
-        The goal is to practice the end-to-end workflow: retrieving and preparing data, applying analytical methods, and communicating results
-        through clear, engaging visual representations hosted on GitHub Pages.  
-    </p>
+
+    <!-- ===========================
+    HEADER + NAVIGATION
+    ============================ -->
+
+    <header class="site-header">
+       <h1 class="site-title">Nicolas Rojas</h1>
+       <nav class="nav">
+         <a href="https://nicolasrojasv.github.io/">Portfolio</a>
+         <a href="#projects">Project</a>
+         <a href="https://www.linkedin.com/in/nicolasrojasv/">LinkedIn</a>
+         <a href="https://www.github.com/nicolasrojasv">GitHub</a>
+         <a href="#contact">Contact</a>
+       </nav>
+    </header>
+
+    <!-- ===========================
+    MAIN CONTENT
+    ============================ -->
+  
+    <main class="container">
+      <section id="about">
+        <h1>
+            Automated Data Visualisation Portfolio
+        </h1>
+        <p> 
+            Welcome to my <a href="https://nicolasrojasv.github.io/">website portfolio</a>.
+            You can explore the source code and repository <a href="https://nicolasrojasv.github.io/">here</a>.  
+        </p>
+
+        <p> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        This portfolio showcases how data visualisation and data science techniques can transform raw data into meaningful policy insights.
+        It is hosted on GitHub Pages and built using Python for data processing and analysis, and HTML, CSS, and JavaScript
+        (with JSON as the data exchange format) for presentation. The visualisations presented here follow the coding challenges from the
+        Automated Data Visualisation for Policymaking course (2025).
+        </p>
+
+      </section>
 
       <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
-    <section>
-        <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
-        </div>
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
+      <section id="first_challenge">
+        <h2>
+                    CC1: Hosting. Display charts in your own site.
+        </h2>
 
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
+        <p> <!--First Task -->
+            The first task is to add two charts using the <em>vegaEmbed</em> function. <br>
+            The graphs that I selected are taken from the Tennis time, Wimbledon Economics in the Economics
+            Observatory webpage.
+        </p>
 
+        <p> <!--Description -->
+            Chart 1 shows how the prize for winning Wimbledon has evolved by event.
+            It is immediately noticeable that the prize for singles tournaments has increased significantly 
+            more than that for doubles tournaments. Moreover, since 2005, the same amount has been awarded 
+            for both the men’s and women’s singles tournaments.
+        </p>
 
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
-    <script>
+        <h3> <!--First Chart -->
+                    Chart 1. Winning prize money by event.
+        </h3>
+
+        <figure class="chart">
+              <div id="Location1"></div> 
+              <figcaption>
+                        Source: Tennis time, Economics Observatory. Data source: Wimbledon, AELTC (2025)
+              </figcaption>
+        </figure>
+
+            <!-- This is a script, it's a way to run JavaScript code on the page -->
+        <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
-        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        let figure_1_spec = "graph/fig3_prize-category.json"; 
+        vegaEmbed('#Location1', figure_1_spec)
 
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+        </script>
 
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
-
-
-    </script>
-
-
-    <!-- Testing section for 2 new graphs -->
-    <section>
-        <div class="chart-description">
-            <h2>Section 2: Tennis Prize Money</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Tennis is a highly unequal sport. Those who advance through consecutive rounds in major tournaments are able to finance their season, 
-                while those who remain at lower levels face severe financial constraints in developing their careers, 
-                since the costs of maintaining a tennis life are higher than the prize money from smaller tournaments.
+        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Tennis is a highly unequal sport. Those who advance through consecutive rounds in major
+                tournaments are able to finance their seasons, while those who remain at lower levels face
+                severe financial constraints in developing their careers, since the costs of maintaining a
+                professional tennis life are higher than the prize money from smaller tournaments.
+                For lower-ranked players, qualifying for Wimbledon can be a financial lifesaver
+                for the entire season. Graph 2 shows that, in relative terms, prize money in the early rounds 
+                of Wimbledon has increased more rapidly over the past 15 years than the amounts awarded in the
+                final rounds. However, in absolute terms, the gap between early-round earnings and the top prizes
+                is now even larger than it was 15 years ago. This means that, despite higher proportional gains for lower rounds, 
+                the overall structure remains highly unequal and may even reinforce perceptions of inequality.
             </p>
-        </div>
-        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-                    <p>
-                        Source: Wimbledon, AELTC.
-                    </p>
+
+        <h3> <!--Second Chart -->
+                    Chart 2. Prize winnings by round
+        </h3>
+
+        <figure class="chart">
+              <div id="Location2"></div> 
+              <figcaption>
+                        Source: Tennis time, Economics Observatory. Data source: Wimbledon, AELTC (2025)
+              </figcaption>
+        </figure>
+
+        <script>
+
+        let figure_2_spec = "graph/fig5_prize-distribution.json"; 
+        vegaEmbed('#Location2', figure_2_spec)
+
+        </script>
+
+       </section>
+
+        <section id="second_challenge">
         
-        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-                     <p>
-                         Source: Wimbledon, AELTC.
-                    </p>
-    </section>
+        <h2>
+                    CC2: Building. Create your own visualisations
+        </h2>
 
-    <section>
-        <div class="chart-description">
-            <h2>Week 2: Money Supply</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                A line chart of M2 money supply in the US. 1960-2025.
-            </p>
-        </div>
-        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
+        <p> <!--Second Task -->
+            In this task, I created 2 graphs using the create tool in the Economics Observatory Data Hub.
+        </p>
 
-        <section>
-        <div class="chart-description">
-            <h2>Week 3: Making a graph in Colab</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Trying to put a graph made in Colab on my github page 
-            </p>
-        </div>
-        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
-    
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
-    <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
+        <p> <!--Description -->
+            Chart 3 illustrates the evolution of Great Britain's real GDP from 1955 to 2024. While the long-term trend shows a steady increase,
+            the series includes several significant downturns, particularly over the past 35 years: the early-1990s recession, 
+            the 2008–2009 financial crises, and the sharp contraction during the COVID-19 pandemic. As shown in the figure, the pandemic
+            produced the largest single drop in real GDP. However, among these three episodes, the post-COVID recovery was the fastest, 
+            with output returning to pre-pandemic levels within a relatively short period.
+        </p>
 
-        let figure_2_spec = "fig3_prize-category.json"; // We're storing the URL of the graph we want to display in a variable
-                                                        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-        let figure_3_spec = "fig5_prize-distribution.json";
-        let figure_4_spec = "m2_line_chart.json";
-        let figure_5_spec = "shiller_pe_ratio_chart.json";
-        vegaEmbed('#Location2', figure_2_spec); // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        vegaEmbed('#Location3', figure_3_spec);
-        vegaEmbed('#Location4', figure_4_spec);
-        vegaEmbed('#Location5', figure_5_spec);
+        <h3> <!--Third Chart -->
+                    Chart 3. Great Britain Real GDP
+        </h3>
+
+        <figure class="chart">
+              <div id="Location3"></div> 
+              <figcaption>
+                        Source: Office por National Statistics.
+              </figcaption>
+        </figure>
+
+        <script>
+
+        let figure_3_spec = "graph/great_britain_gdp.json"; 
+        vegaEmbed('#Location3', figure_3_spec)
+
+        </script>
+
+                <p> <!--Description -->
+            Unemployment is closely related to overall economic performance, particularly during periods of crisis. Chart 4 shows the 
+            unemployment rate in Great Britain from 1970 to 2025. When compared with Chart 3, it is possible to observe substantial 
+            increases in unemployment during the major downturns: roughly 5 percentage points in the early-1990s recession, around 3 points
+            during the 2008–2009 financial crisis, and about 2 points during the COVID-19 pandemic. A key insight from the figure is 
+            that unemployment typically takes longer to return to its pre-crisis levels than real GDP, reflecting slower adjustments 
+            in labour markets.
+        </p>
+
+        <h3> <!--Fourth Chart -->
+                    Chart 4. Great Britain Unemployment
+        </h3>
+
+        <figure class="chart">
+              <div id="Location4"></div> 
+              <figcaption>
+                        Source: Office por National Statistics.
+              </figcaption>
+        </figure>
+
+        <script>
+
+        let figure_4_spec = "graph/great_britain_unemployment.json"; 
+        vegaEmbed('#Location4', figure_4_spec)
+
+        </script>
+
+       </section>
+
+        <section id="third_challenge">
         
-    </script>
+        <h2>
+                    CC3: Debate. Use a visualisation in policy commentary
+        </h2>
 
-</body>
+        <p> <!--Third Task -->
+            In this task, I created 2 graphs supporting
+        </p>
+
+        <p> <!--Description -->
+            Chart 5 illustrates
+        </p>
+
+        <h3> <!--Fifth Chart -->
+                    Chart 5. 
+        </h3>
+
+        <figure class="chart">
+              <div id="Location5"></div> 
+              <figcaption>
+                        Source: 
+              </figcaption>
+        </figure>
+
+        <script>
+
+        let figure_5_spec = "graph/.json"; 
+        vegaEmbed('#Location5', figure_5_spec)
+
+        </script>
+
+                <p> <!--Description -->
+            Chart 6...
+        </p>
+
+        <h3> <!--Fourth Chart -->
+                    Chart 6.
+        </h3>
+
+        <figure class="chart">
+              <div id="Location6"></div> 
+              <figcaption>
+                        Source:
+              </figcaption>
+        </figure>
+
+        <script>
+
+        let figure_6_spec = "graph/.json"; 
+        vegaEmbed('#Location6', figure_6_spec)
+
+        </script>
+
+       </section>
+
+       <section id="fourt_challenge">
+        
+        <h2>
+                    CC4: Replication. Re-create, then improve, someone else's chart
+        </h2>
+
+        <p> <!--Fourt Task -->
+        For this task I use a graph shown by former Chilean president Sebastián Piñera during a TV debate in the run-up to the 2018 
+        presidential election, which he eventually won. As shown in the image below, the chart aims to show that during his previous 
+        term in office (2010-2013) the delinquency rate fell and then rose again when the opposition coalition governed (2014-2017).
+        However, a closer look at the figure reveals that the y-axis is truncated, artificially exaggerating the fall in delinquency
+        during his administration.
+        </p>
+
+        <h3> <!--Bad Graph Image -->
+                    Image 1. Sebastián Piñera's Crime Chart from the 2018 Presidential Debate
+        </h3>
+
+        <figure class="chart">
+              <img src="graph/pinera_crime_graph.png" alt="Pinera Crime Graph" width="400">
+              <figcaption>
+                        Source: Biobiochile.cl. The image is available 
+                        <a href="https://www.biobiochile.cl/noticias/nacional/chile/2017/11/07/los-errores-del-grafico-que-mostro-pinera-durante-el-debate.shtml">here</a>.
+              </figcaption>
+        </figure>
+
+        <p> <!--Description -->
+            I'm trying to replicate the exact graph using Vega Lite in Chart 7. The most challenging part was 
+            distorting the y axis, which I couldn't achieve in Vega-Lite.
+        </p>
+
+        <h3> <!--Fourth Chart -->
+                    Chart 7. Replication of Piñera's crime graph
+        </h3>
+
+        <figure class="chart">
+              <div id="Location7"></div> 
+        </figure>
+
+        <script>
+
+        vegaEmbed('#Location7', "graph/replication_pinera_crime_graph.json")
+
+        </script>
+
+        <p> <!--Description -->
+            I improved the chart by using the full data series, correcting axis distortion, applying consistent scaling, clearer labels, 
+            and period grouping to make trends clear.
+        </p>
+
+        <h3> <!--Fourth Chart -->
+                    Chart 8. Improving the victimisation rate graph
+        </h3>
+
+        <figure class="chart">
+              <div id="Location8"></div> 
+              <figcaption>
+                Source: National Urban Public Safety Survey (ENUSC).
+                Data available <a href="https://www.ine.gob.cl/estadisticas/sociales/seguridad-publica-y-justicia/seguridad-ciudadana">here</a>.
+              </figcaption>
+        </figure>
+
+        <script>
+
+        vegaEmbed('#Location8', "graph/pinera_crime_graph_improved.json")
+
+        </script>
+
+               <section id="fourt_challenge">
+        
+        <h2>
+                    CC5: Accessing data: Scraper and API
+        </h2>
+
+        <p> <!--Fifth Task -->
+        In this task, I have to use an API and scrape data from a website so my portfolio has live access to a data sources. <br>
+        Chart 9 use live temperature data from Open-Meteo.
+        </p>
+
+        <h3> <!--Fifth Chart -->
+                    Chart 9. Using an API
+        </h3>
+
+        <figure class="chart">
+                <div id="Location9"></div> 
+                    <figcaption>
+                        Source: Open-Meteo (2025). Weather Forecast API. 
+                        Retrieved from <a href="https://open-meteo.com/">https://open-meteo.com/</a>
+                    </figcaption>
+        </figure>
+
+        <script>
+
+        vegaEmbed('#Location9', "graph/api_temperature_london.json")
+
+        </script>
+
+        <div class="api-description">
+  <h4>API Functional Description</h4>
+  <p>
+    The chart above uses the <strong>Open-Meteo Weather Forecast API</strong>, which provides free, no-key access to hourly and daily
+     weather data. All requests are made to the base endpoint:
+  </p>
+
+  <p>
+    https://api.open-meteo.com/v1/forecast
+  </p>
+
+  <p>To call the API, several parameters must be specified:</p>
+
+  <ul>
+    <li><strong>latitude</strong> - geographic latitude of the location</li>
+    <li><strong>longitude</strong> - geographic longitude</li>
+    <li><strong>hourly</strong> - comma-separated list of hourly variables to retrieve
+      (e.g., <em>apparent_temperature</em>, <em>relativehumidity_2m</em>)</li>
+    <li><strong>forecast_days</strong> - number of days to include in the forecast</li>
+    <li><strong>timezone</strong> - ensures timestamps match the local time of the location</li>
+  </ul>
+
+  <p>The full API URL used in this visualisation is:</p>
+
+  <pre style="background:#f5f5f5; padding:10px; border-radius:6px; overflow-x:auto;">
+https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=apparent_temperature,relativehumidity_2m&forecast_days=7&timezone=Europe%2FLondon
+  </pre>
+
+  <p>
+    The response returns JSON arrays for <code>hourly.time</code>, 
+    <code>hourly.apparent_temperature</code> and 
+    <code>hourly.relativehumidity_2m</code>, which are flattened
+    and transformed in Vega-Lite to produce the chart above.
+  </p>
+</div>
+
+        <p> <!--Description -->
+            I improved
+        </p>
+
+        <h3> <!--Fifth Chart -->
+                    Chart 10. Scraping data from a website
+        </h3>
+
+        <figure class="chart">
+            <div id="Location10"></div> 
+            <figcaption>
+                Source:
+            </figcaption>
+        </figure>
+
+        <script>
+
+        vegaEmbed('#Location10', "graph/")
+
+        </script>
+
+       </section>
+ 
+       <section id="seventh_challenge">
+        
+        <h2>
+                    CC7: MAP
+        </h2>
+
+        <p> <!--Second Task -->
+            Construct two maps
+        </p>
+
+        <p> <!--Description -->
+            Map 1
+        </p>
+
+        <h3> <!--Third Chart -->
+                    Map 1. MAP
+        </h3>
+
+        <figure class="chart">
+              <div id="Location4"></div> 
+              <figcaption>
+                        Source: MAP?
+              </figcaption>
+        </figure>
+
+        <script>
+
+        let figure_10_spec = "graph/great_britain_gdp.json"; 
+        vegaEmbed('#Location5', figure_10_spec)
+
+        </script>
+
+       </section>
+
+             </section>
+ 
+       <section id="eight_challenge">
+        
+        <h2>
+                    CC8: BIG DATA. Extracting a story from millions of prices.
+        </h2>
+
+        <p> <!-- Task -->
+            Construct one graph
+        </p>
+
+        <p> <!--Description -->
+            Graph 12
+        </p>
+
+        <h3> <!--Third Chart -->
+                    Graph 12. MILK
+        </h3>
+
+        <figure class="chart">
+              <div id="Location12"></div> 
+              <figcaption>
+                        Source: ONS
+              </figcaption>
+        </figure>
+
+        <script>
+
+        vegaEmbed('#Location12', "graph/wk8_milkprices_chart.json")
+
+        </script>
+
+       </section>
+
+
+  <!-- ===========================
+       FOOTER
+  ============================ -->
+  <footer class="site-footer">
+    <p>© 2025 Nicolas Rojas. All rights reserved.</p>
+  </footer>
+
+  </body>
     
 </html>

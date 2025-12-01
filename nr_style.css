@@ -1,0 +1,139 @@
+/* =====================================
+   LSE-inspired CSS for GitHub Pages
+   - Vertical and horizontal centering
+   - Institutional color palette (LSE)
+   - Balanced margins and readability
+   ===================================== */
+
+/* =======================================
+   0) Base reset and CSS custom properties 
+   ======================================= */
+   
+*,
+*::before,
+*::after { box-sizing: border-box; } /* Ensures padding and borders are included in total width/height */
+
+/* =======================================
+   1) Global variables (:root) 
+   ======================================= */
+
+:root {
+  --bg: #f7f7f7; /* Main background color of the page (light gray for soft contrast) */
+  
+  --ink: #222; /* Primary text color (dark gray instead of pure black for better readability) */
+  
+  --muted: #666; /* Secondary text color for less important or subtle content */
+  
+  --brand: #e41e26; /* Brand accent color — LSE red used for highlights and links */
+  
+  --radius: 14px; /* Default border radius for cards, buttons, and rounded elements */
+  
+  --space: 16px; /* Base spacing unit for consistent margins and paddings */
+  
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; 
+  /* Global font stack — uses the system default first, then common web-safe fonts */
+}
+
+/* =======================================
+   2) Base styles (applied to everything)
+   ======================================= */
+html {
+  font-size: 16px; /* Default root font size */
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* =======================================
+   3) Header and navigation
+   ======================================= */
+
+.site-header {
+  display: flex;               /* Aligns title and nav horizontally */
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--space) * 1.25);
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+  color: var(--brand);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--brand);
+}
+
+/* =======================================
+   4) Main content and cards
+   ======================================= */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 var(--space);
+}
+
+/* =======================================
+   5) Global text alignment
+   ======================================= */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;          /* Centers all heading text */
+  margin-top: 0;               /* Avoids extra space above headings */
+  line-height: 1.2;
+  color: var(--brand);         /* Keeps the LSE red for consistency */
+}
+
+/* Paragraph */
+p {
+  text-align: justify;         /* Aligns both left and right edges of text */
+  margin: 1em 0;               /* Keeps comfortable spacing between paragraphs */
+  color: var(--muted);
+}
+
+/* Figures */
+/* Centered container for charts or figures */
+
+figure.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centers both chart and caption */
+  margin: 1.5rem auto;
+}
+
+figure.chart figcaption {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* =======================================
+   6) Footer
+   ======================================= */
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: var(--space);
+  border-top: 1px solid #ddd;
+  background: var(--bg);
+}
