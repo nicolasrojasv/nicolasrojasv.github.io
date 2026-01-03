@@ -1,0 +1,23 @@
+country_name,country_code,indicator_name,indicator_code,year,gini
+Colombia,COL,Gini index,SI.POV.GINI,2014.0,52.5
+Colombia,COL,Gini index,SI.POV.GINI,2015.0,51.0
+Colombia,COL,Gini index,SI.POV.GINI,2016.0,50.6
+Colombia,COL,Gini index,SI.POV.GINI,2017.0,49.7
+Colombia,COL,Gini index,SI.POV.GINI,2018.0,50.4
+Colombia,COL,Gini index,SI.POV.GINI,2019.0,51.3
+Colombia,COL,Gini index,SI.POV.GINI,2020.0,53.5
+Colombia,COL,Gini index,SI.POV.GINI,2021.0,55.1
+Colombia,COL,Gini index,SI.POV.GINI,2022.0,54.8
+Colombia,COL,Gini index,SI.POV.GINI,2023.0,53.9
+Colombia,COL,Gini index,SI.POV.GINI,2024.0,53.9
+Norway,NOR,Gini index,SI.POV.GINI,2014.0,26.8
+Norway,NOR,Gini index,SI.POV.GINI,2015.0,27.5
+Norway,NOR,Gini index,SI.POV.GINI,2016.0,28.5
+Norway,NOR,Gini index,SI.POV.GINI,2017.0,27.0
+Norway,NOR,Gini index,SI.POV.GINI,2018.0,27.6
+Norway,NOR,Gini index,SI.POV.GINI,2019.0,27.7
+Norway,NOR,Gini index,SI.POV.GINI,2020.0,28.4
+Norway,NOR,Gini index,SI.POV.GINI,2021.0,29.1
+Norway,NOR,Gini index,SI.POV.GINI,2022.0,26.9
+Norway,NOR,Gini index,SI.POV.GINI,2023.0,26.5
+Norway,NOR,Gini index,SI.POV.GINI,2024.0,26.5
