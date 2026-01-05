@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Actual vs predicted career duration with 45-degree reference line and model performance metrics (R² and RMSE) loaded from CSV.",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Total Price Money as predictor of Career Longevity",
+    "subtitle": "Retired low-earning players",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 16
+  },
+  "view": {"strokeWidth": 0},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/actual_vs_predicted_data.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "calculate": "toNumber(datum.years_actual)", "as": "years_actual_num" },
+        { "calculate": "toNumber(datum.years_predicted)", "as": "years_predicted_num" }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 70, "opacity": 0.6, "color": "#0033A0" },
+      "encoding": {
+        "x": {
+          "field": "years_predicted_num",
+          "type": "quantitative",
+          "title": "Predicted years on tour",
+          "axis": { "grid": false }
+        },
+        "y": {
+          "field": "years_actual_num",
+          "type": "quantitative",
+          "title": "Actual years on tour",
+          "axis": { "grid": false }
+        },
+        "tooltip": [
+          { "field": "years_predicted_num", "type": "quantitative", "title": "Predicted years: ", "format": ".2f" },
+          { "field": "years_actual_num", "type": "quantitative", "title": "Actual years: ", "format": ".0f" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/actual_vs_predicted_data.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "calculate": "toNumber(datum.years_actual)", "as": "years_actual_num" },
+        { "calculate": "toNumber(datum.years_actual)", "as": "years_predicted_num" }
+      ],
+      "mark": { "type": "line", "strokeDash": [4, 4], "strokeWidth": 2, "color": "#7f7f7f" },
+      "encoding": {
+        "x": { "field": "years_predicted_num", "type": "quantitative" },
+        "y": { "field": "years_actual_num", "type": "quantitative" }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/model_performance_metrics.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "calculate": "datum.metric == 'R2_percentage' ? 'R\u00b2 = ' + format(toNumber(datum.value), '.1f') + '%' : ''", "as": "r2_text" },
+        { "calculate": "datum.metric == 'RMSE_years' ? 'RMSE = ' + format(toNumber(datum.value), '.2f') + ' years' : ''", "as": "rmse_text" },
+        {
+          "aggregate": [
+            { "op": "max", "field": "r2_text", "as": "r2" },
+            { "op": "max", "field": "rmse_text", "as": "rmse" }
+          ]
+        },
+        { "calculate": "datum.r2 + '\\n' + datum.rmse", "as": "metrics_label" }
+      ],
+      "mark": { "type": "text", "align": "left", "baseline": "top", "fontSize": 13, "color": "#303030" },
+      "encoding": {
+        "x": { "value": 10 },
+        "y": { "value": 10 },
+        "text": { "field": "metrics_label" }
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "#d9d9d9" },
+    "font": "Segoe UI",
+    "axis": { "labelFontSize": 14, "titleFontSize": 14, "titleFontWeight": "normal", "grid": false }
+  }
+}
+

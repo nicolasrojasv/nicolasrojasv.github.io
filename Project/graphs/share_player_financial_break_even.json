@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Share of players with positive balance (prize money >= annual cost) over time.",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Share of players reaching financial break-even",
+    "subtitle": "Percentage of players with a positive annual balance (prize money > annual cost)",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 14
+  },
+  "view": {"strokeWidth": 0},
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/positive_balance_by_year.csv",
+    "format": { "type": "csv" }
+  },
+  "transform": [
+    { "calculate": "toNumber(datum.year)", "as": "year_num" },
+    { "calculate": "toNumber(datum.percentage)", "as": "pct_raw" },
+
+    {
+      "calculate": "datum.pct_raw > 1 ? datum.pct_raw/100 : datum.pct_raw",
+      "as": "pct"
+    },
+
+    { "calculate": "toNumber(datum.sum)", "as": "n_positive" },
+    { "calculate": "toNumber(datum.count)", "as": "n_total" }
+  ],
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 3, "interpolate": "monotone" },
+      "encoding": {
+        "x": {
+          "field": "year_num",
+          "type": "quantitative",
+          "title": null,
+          "axis": { "grid": false, "tickCount": 6, "format": "d" }
+        },
+        "y": {
+          "field": "pct",
+          "type": "quantitative",
+          "title": "Percentage of players",
+          "axis": { "grid": false, "format": ".0%" },
+          "scale": { "domain": [0, 0.2] }
+        },
+        "color": { "value": "#0033A0" }
+      }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 40 },
+      "encoding": {
+        "x": { "field": "year_num", "type": "quantitative" },
+        "y": { "field": "pct", "type": "quantitative" },
+        "color": { "value": "#0033A0" },
+        "tooltip": [
+          { "field": "year_num", "type": "quantitative", "title": "Year: ", "format": "d" },
+          { "field": "pct", "type": "quantitative", "title": "Share: ", "format": ".1%" },
+          { "field": "n_positive", "type": "quantitative", "title": "N° Players (≥ cost): ", "format": ",.0f" },
+          { "field": "n_total", "type": "quantitative", "title": "Total players: ", "format": ",.0f" }
+        ]
+      }
+    },
+
+    {
+      "transform": [{ "filter": "datum.year_num == 2014 || datum.year_num == 2025" }],
+      "mark": { "type": "text", "align": "left", "dx": 6, "dy": -8, "fontSize": 12, "color": "#303030" },
+      "encoding": {
+        "x": { "field": "year_num", "type": "quantitative" },
+        "y": { "field": "pct", "type": "quantitative" },
+        "text": { "field": "pct", "type": "quantitative", "format": ".1%" }
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "#d9d9d9" },
+    "font": "Segoe UI",
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": "normal",
+      "grid": false
+    }
+  }
+}

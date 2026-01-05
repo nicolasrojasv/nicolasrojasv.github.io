@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Gini time series by year and ranking cutoff (top_n) for selected series.",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Gini Index over time",
+    "subtitle": "Selected a ranking cutoff to recalculate the ATP Tour Gini Index.",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 14
+  },
+  "view": {"strokeWidth": 0},
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/gini_by_year_topn.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "top_n",
+      "value": 99999,
+      "bind": {
+        "input": "select",
+        "options": [50, 100, 150, 200, 300, 500, 1000, 2000, 99999],
+        "labels": [
+          "Top 50",
+          "Top 100",
+          "Top 150",
+          "Top 200",
+          "Top 300",
+          "Top 500",
+          "Top 1000",
+          "Top 2000",
+          "All ranked"
+        ],
+        "name": "Ranking cutoff: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.top_n == top_n"},
+    {
+      "filter": "datum.country_name == 'ATP Tour' || datum.country_name == 'Colombia' || datum.country_name == 'United States' || datum.country_name == 'Ireland' || datum.country_name == 'Chile' || datum.country_name == 'Norway' || datum.country_name == 'Japan'"
+    },
+    {"calculate": "toNumber(datum.year)", "as": "year_num"},
+    {"calculate": "toNumber(datum.gini)", "as": "gini_num"}
+  ],
+  "mark": {"type": "line", "strokeWidth": 3, "point": { "filled": true, "size": 30 }, 
+           "interpolate": "monotone"
+          },
+  "encoding": {
+    "x": {
+      "field": "year_num",
+      "type": "ordinal",
+      "title": null,
+      "axis": {"labelAngle": 0}
+    },
+    "y": {
+      "field": "gini_num",
+      "type": "quantitative",
+      "title": "Gini coefficient",
+      "scale": {"domain": [0, 1]}
+    },
+    "color": {"field": "country_name", "type": "nominal", "title": null, 
+    "scale": {
+        "domain": ["ATP Tour", "Colombia", "United States", "Ireland", "Chile", "Norway", "Japan"],
+        "range":  ["#0033A0", "#F4D03F", "#6BAED6", "#2CA02C", "#D62728", "#FF7F0E", "#9467BD"]
+}
+    },
+    "opacity": {
+    "condition": {
+      "test": "datum.country_name === 'ATP Tour'",
+      "value": 1
+    },
+    "value": 0.6
+  },
+    "tooltip": [
+    { "field": "country_name", "type": "nominal", "title": "Country: " },
+    { "field": "year_num", "type": "ordinal", "title": "Year: " },
+    { "field": "gini_num", "type": "quantitative", "title": "Gini: ", "format": ".3f" }
+  ]
+  },
+  "config": {
+    "view": { "stroke": "#d9d9d9" },
+    "font": "Segoe UI",
+    "axis": {"grid": false, "labelFontSize": 14, "titleFontSize": 14, "titleFontWeight": "normal"},
+    "legend": {"labelFontSize": 14, "symbolStrokeWidth": 1}
+  }
+}

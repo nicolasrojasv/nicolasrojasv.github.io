@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Prize money vs. annual cost benchmark by ranking (year selector) with break-even rank (min positive balance) and ranking range sliders.",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": ["Financial Sustainability in Professional Tennis:", 
+    "The Break-Even Ranking"],
+    "subtitle": [
+  "The horizontal line marks the annual cost.",
+  "The vertical line marks the break-even ranking."
+],
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 14
+  },
+  "view": {"strokeWidth": 0},
+  "params": [
+    {
+      "name": "year",
+      "value": 2025,
+      "bind": { "input": "range", "min": 2014, "max": 2025, "step": 1, "name": "Year: " }
+    },
+    {
+      "name": "rank_min",
+      "value": 10,
+      "bind": { "input": "range", "min": 1, "max": 2800, "step": 1, "name": "Min ranking: " }
+    },
+    {
+      "name": "rank_max",
+      "value": 2800,
+      "bind": { "input": "range", "min": 1, "max": 2800, "step": 1, "name": "Max ranking: " }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/players_prize_by_year.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "calculate": "toNumber(datum.year)", "as": "year_num" },
+        {
+          "calculate": "isValid(datum.rank) ? toNumber(datum.rank) : toNumber(datum.ranking)",
+          "as": "rank_num"
+        },
+        {
+          "calculate": "isValid(datum.prize_usd) ? toNumber(datum.prize_usd) : toNumber(datum.prize)",
+          "as": "prize_usd_num"
+        },
+        { "filter": "datum.year_num === year" },
+        { "filter": "isValid(datum.rank_num) && datum.rank_num > 0" },
+        { "filter": "isValid(datum.prize_usd_num) && datum.prize_usd_num >= 0" },
+
+        { "filter": "datum.rank_num >= min(rank_min, rank_max) && datum.rank_num <= max(rank_min, rank_max)" },
+
+        {
+          "aggregate": [
+            { "op": "median", "field": "prize_usd_num", "as": "median_prize_usd" }
+          ],
+          "groupby": ["rank_num"]
+        }
+      ],
+      "mark": { "type": "line", "strokeWidth": 3, "interpolate": "monotone" },
+      "encoding": {
+        "x": {
+          "field": "rank_num",
+          "type": "quantitative",
+          "title": "Player Ranking",
+          "scale": { "reverse": true },
+          "axis": { "grid": false }
+        },
+        "y": {
+          "field": "median_prize_usd",
+          "type": "quantitative",
+          "title": "Prize money (USD)",
+          "axis": { "grid": false, "format": ",.0f" }
+        },
+        "color": { "value": "#0033A0" },
+        "tooltip": [
+          { "field": "rank_num", "type": "quantitative", "title": "Ranking", "format": ",.0f" },
+          { "field": "median_prize_usd", "type": "quantitative", "title": "Median prize (USD)", "format": ",.0f" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/average_annual_cost_atp_season.csv",
+        "format": { "type": "dsv", "delimiter": ";" }
+      },
+      "transform": [
+        { "calculate": "toNumber(datum.year)", "as": "year_num" },
+        { "filter": "datum.year_num === year" },
+        { "calculate": "toNumber(datum.annual_cost)", "as": "cost_usd_num" },
+        { "filter": "isValid(datum.cost_usd_num) && datum.cost_usd_num > 0" }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeDash": [6, 6],
+        "strokeWidth": 2,
+        "color": "#7f7f7f"
+      },
+      "encoding": {
+        "y": { "field": "cost_usd_num", "type": "quantitative" },
+        "tooltip": [
+          { "field": "year_num", "type": "quantitative", "title": "Year: " },
+          { "field": "cost_usd_num", "type": "quantitative", "title": "Annual cost (USD): ", "format": ",.0f" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/players_prize_by_year.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "calculate": "toNumber(datum.year)", "as": "year_num" },
+        {
+          "calculate": "isValid(datum.rank) ? toNumber(datum.rank) : toNumber(datum.ranking)",
+          "as": "rank_num"
+        },
+        { "calculate": "toNumber(datum.balance)", "as": "balance_num" },
+
+        { "filter": "datum.year_num === year" },
+        { "filter": "isValid(datum.rank_num) && isValid(datum.balance_num)" },
+
+        { "filter": "datum.rank_num >= min(rank_min, rank_max) && datum.rank_num <= max(rank_min, rank_max)" },
+
+        { "filter": "datum.balance_num > 0" },
+        {
+          "window": [{ "op": "row_number", "as": "rn" }],
+          "sort": [{ "field": "balance_num", "order": "ascending" }]
+        },
+        { "filter": "datum.rn === 1" }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2,
+        "strokeDash": [4, 4],
+        "color": "#7f7f7f"
+      },
+      "encoding": {
+        "x": { "field": "rank_num", "type": "quantitative" },
+        "tooltip": [
+          { "field": "year_num", "type": "quantitative", "title": "Year: " },
+          { "field": "rank_num", "type": "quantitative", "title": "Break-even rank: ", "format": ",.0f" },
+          { "field": "balance_num", "type": "quantitative", "title": "Balance (USD): ", "format": ",.0f" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "#d9d9d9" },
+    "font": "Segoe UI",
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": "normal",
+      "grid": false
+    },
+    "legend": { "labelFontSize": 14, "symbolStrokeWidth": 1 }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Gini index (0–1): A value of 0 indicates perfect equality, while 1 indicates maximum inequality.",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Lorenz Curve and Gini Index of the ATP Tour",
+    "subtitle": "Gini index (0–1): A value of 0 indicates perfect equality, while 1 indicates maximum inequality.",
+    "anchor": "start"},
+  "params": [
+    {
+      "name": "year",
+      "value": 2025,
+      "bind": { "input": "range", "min": 2014, "max": 2025, "step": 1, "name": "Year" }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/lorenz_curve_data.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "filter": "datum.year == year" }
+      ],
+      "mark": { "type": "line", "color": "steelblue" },
+      "encoding": {
+        "x": {
+          "field": "cumulative_population",
+          "type": "quantitative",
+          "title": "Cumulative Proportion of Tennis players",
+          "axis": { "grid": false }
+        },
+        "y": {
+          "field": "cumulative_income",
+          "type": "quantitative",
+          "title": "Cumulative Proportion of Prize Money",
+          "axis": { "grid": false }
+        },
+        "tooltip": [
+          { "field": "cumulative_population", "type": "quantitative", "format": ".1%", 
+            "title": "Cumulative Tennis Players"},
+          { "field": "cumulative_income", "type": "quantitative", "format": ".1%",
+            "title": "Cumulative Prize Money" },
+          { "field": "year", "type": "nominal", "title": "Year"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          { "cumulative_population": 0, "cumulative_income": 0 },
+          { "cumulative_population": 1, "cumulative_income": 1 }
+        ]
+      },
+      "mark": { "type": "line", "strokeDash": [5, 5], "color": "red" },
+      "encoding": {
+        "x": { "field": "cumulative_population", "type": "quantitative" },
+        "y": { "field": "cumulative_income", "type": "quantitative" }
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/gini_index_data.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "filter": "datum.year == year" },
+        { "calculate": "\"Gini Index: \" + format(datum.gini_index, \".3f\")", "as": "formatted_gini" }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "top",
+        "fontSize": 12,
+        "color": "black"
+      },
+      "encoding": {
+        "text": { "field": "formatted_gini", "type": "nominal" },
+        "x": { "value": 200 },
+        "y": { "value": 15 }
+      }
+    }
+  ]
+}
