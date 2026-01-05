@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Prize money por rango de ranking.",
+  "title": {
+    "text": "Prize Money by Ranking",
+    "fontSize": 18,
+    "subtitle": "Singles prize money in USD",
+    "subtitleFontSize": 13
+  },
+  "width": 450,
+  "height": 300,
+  "background": "#f7f7f7",
+  "view": { "fill": "#f7f7f7", "strokeOpacity": 0, "stroke": null },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/data/prize_money_by_ranking_bin.csv",
+    "format": { "type": "csv" }
+  },
+
+  "mark": {
+    "type": "bar",
+    "color": "#00529B"
+  },
+
+  "encoding": {
+    "x": {
+      "field": "ranking_bin",
+      "type": "ordinal",
+      "sort": [
+        "491-500","481-490","471-480","461-470","451-460",
+        "441-450","431-440","421-430","411-420","401-410",
+        "391-400","381-390","371-380","361-370","351-360",
+        "341-350","331-340","321-330","311-320","301-310",
+        "291-300","281-290","271-280","261-270","251-260",
+        "241-250","231-240","221-230","211-220","201-210",
+        "191-200","181-190","171-180","161-170","151-160",
+        "141-150","131-140","121-130","111-120","101-110",
+        "91-100","81-90","71-80","61-70","51-60",
+        "41-50","31-40","21-30","11-20","1-10"
+      ],
+      "axis": {
+        "title": "Ranking bin",
+        "labelAngle": -40,
+        "grid": false,
+        "labelExpr": "parseInt(split(datum.label, '-')[0]) % 30 == 1 ? datum.label : ''"
+      }
+    },
+    "y": {
+      "field": "prize_usd",
+      "type": "quantitative",
+      "axis": {
+        "title": "Prize money (USD)",
+        "grid": false,
+        "format": "$,.0f"
+      }
+    },
+    "tooltip": [
+      { "field": "ranking_bin", "type": "ordinal", "title": "Ranking bin" },
+      {
+        "field": "prize_usd",
+        "type": "quantitative",
+        "title": "Prize money",
+        "format": "$,.0f"
+      }
+    ]
+  },
+
+  "config": {
+    "font": "Calibri"
+  }
+}

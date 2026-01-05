@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "GDP per capita, 1951–2022 (Maddison Project).",
+  "width": 450,
+  "height": 300,
+  "background": "white",
+  "view": {"fill": "white", "strokeOpacity": 0, "stroke": null},
+  "title": {
+    "text": "GDP per capita in selected countries",
+    "subtitle": "Adjusted for inflation and living costs (PPP)",
+    "fontSize": 18,
+    "subtitleFontSize": 14
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/data/gdp-per-capita-maddison-project-database.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "toDate(datum.Year + '-01-01')", "as": "year_date"}
+  ],
+    "layer": [
+    {
+      "mark": { "type": "line", "interpolate": "linear", "strokeWidth": 2 },
+      "encoding": {
+        "x": {
+          "field": "year_date",
+          "type": "temporal",
+          "title": null,
+          "axis": { "format": "%Y", "tickCount": 8, "grid": false }
+        },
+        "y": {
+          "field": "GDP per capita",
+          "type": "quantitative",
+          "title": null,
+          "scale": { "zero": true },
+          "axis": { "format": "$,.0f", "grid": true, "gridDash": [2, 2] }
+        },
+        "color": { "field": "Entity", "type": "nominal", "legend": null }
+      }
+    },
+
+    
+
+    {
+      "transform": [
+        {
+          "window": [{ "op": "rank", "as": "rank" }],
+          "sort": [{ "field": "year_date", "order": "descending" }],
+          "groupby": ["Entity"]
+        },
+        { "filter": "datum.rank === 1" }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": { "field": "year_date", "type": "temporal", "axis": {"labelFontSize": 12} },
+        "y": { "field": "GDP per capita", "type": "quantitative", "axis": {"labelFontSize": 12} },
+        "text": { "field": "Entity" },
+        "color": { "field": "Entity", "type": "nominal" }
+      }
+    }
+  ],
+  "config": { "font": "Calibri" }
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Replication of a crime chart shown in a Chilean presidential debate.",
+  "width": 450,
+  "height": 300,
+  "background": "lightyellow",
+
+  "data": {
+    "values": [
+      {"year": "2010", "rate": 30.7, "label": "30.7%"},
+      {"year": "2013", "rate": 22.8, "label": "22.8%"},
+      {"year": "2016", "rate": 27.3, "label": "27.3%"}
+    ]
+  },
+
+  "title": {
+    "text": "CRIME",
+    "subtitle": "Victimisation (Households victim of crime in the last 12 months)",
+    "fontSize": 40,
+    "color": "#1f5997",
+    "subtitleFontSize": 8,
+    "anchor": "middle"
+  },
+
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": null,
+            "labelAngle": 0,
+            "labelFontSize": 16,
+            "domain": false,
+            "ticks": false
+          }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "stack": "null",
+          "scale": {
+            "domain": [20, 32]
+          },
+          "axis": null
+        },
+        "color": {
+          "field": "year",
+          "type": "nominal",
+          "scale": {
+            "domain": ["2010", "2013", "2016"],
+            "range": ["#e53935", "#1f5997", "#e53935"]
+          },
+          "legend": null
+        }
+      }
+    },
+
+    {
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "fontSize": 40,
+        "fontWeight": "bold",
+        "align" : "center"
+      },
+
+      "transform": [
+        { "calculate": "datum.rate/1.07", "as": "rate_mid"}
+        ],
+
+      "encoding": {
+        "x": {
+          "field": "year", 
+          "type": "ordinal"
+          },
+        "y": {
+          "field": "rate_mid", 
+          "type": "quantitative",
+          "scale": {
+            "domain": [20, 32]
+          }
+          },
+        "text": {
+          "field": "label"
+          }
+      }
+    },
+
+    {
+  "mark": {
+    "type": "text",
+    "align": "left",
+    "baseline": "top",
+    "fontSize": 8,
+    "dy": 10,
+    "color": "#333"
+  },
+  "encoding": {
+    "x": {"value": 0},
+    "y": {"value": 320},
+    "text": {"value": "Source: ENUSC"}
+  }
+}
+  ],
+
+  "config": {
+    "view": { 
+      "stroke": null,
+      "fill": "white"
+      },
+    "font": "Helvetica"
+  }
+}

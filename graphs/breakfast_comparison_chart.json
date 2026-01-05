@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Comparison of Median Price by Month and Store",
+  "title": {
+    "text": "Comparison of shopping for breakfast",
+    "fontSize": 24,
+    "fontWeight": "normal",
+    "anchor": "middle",
+    "subtitle": "Among shops with the highest and lowest median prices between July 2023 and November 2025",
+    "subtitleFontSize": 16
+  },
+  "width": 450,
+  "height": 300,
+  "background": "white",
+  "view": { "fill": "white", "strokeOpacity": 0},
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/data/breakfast_median_prices_by_month_store.csv",
+    "format": {"type": "csv"}
+  },
+
+  "mark": {"type": "line"},
+  "encoding": {
+    "x": {
+      "field": "year_month",
+      "type": "temporal",
+      "title": "",
+      "axis": {"labelAngle": -45, "grid": false, "labelFontSize": 14}
+    },
+    "y": {
+      "field": "sum_median_price",
+      "type": "quantitative",
+      "title": "Sum of Products Median Price",
+      "axis": {"format": ".0f", "labelExpr": "'£' + datum.label", 
+      "grid": false, "labelFontSize": 14, "titleFontSize": 14}
+    },
+    "color": {
+  "field": "store_id",
+  "type": "nominal",
+  "title": "Store",
+  "scale": {
+    "domain": ["1", "4"],
+    "range": ["#0841A2", "#A26908"]
+  },
+  "legend": {
+            "titleFontSize": 14,
+            "labelFontSize": 14
+            }
+}
+  },
+  "config": { "text": { "font": "calibri" }
+            }
+}

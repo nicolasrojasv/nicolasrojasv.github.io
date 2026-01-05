@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Lorenz curves comparing ATP prize money inequality with national income inequality (Norway vs Colombia).",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Lorenz Curve and Gini Index of the ATP Tour",
+    "subtitle": "Gini index (0–1): A value of 0 indicates perfect equality, while 1 indicates maximum inequality.",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 14
+  },
+  "params": [
+    {
+      "name": "year",
+      "value": 2025,
+      "bind": { "input": "range", "min": 2014, "max": 2025, "step": 1, "name": "Year: " }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "p",
+      "type": "quantitative",
+      "title": "Cumulative share of population / players",
+      "scale": { "domain": [0, 1] },
+      "axis": { "format": ".0%", "grid": false, "tickCount": 11 }
+    },
+    "y": {
+      "field": "L",
+      "type": "quantitative",
+      "title": "Cumulative share of income / prize money",
+      "scale": { "domain": [0, 1] },
+      "axis": { "format": ".0%", "grid": false, "tickCount": 11 }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          { "p": 0, "L": 0 },
+          { "p": 1, "L": 1 }
+        ]
+      },
+      "mark": { "type": "line", "strokeDash": [4, 4], "color": "#bdbdbd", "strokeWidth": 2 }
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/lorenz_curve_data.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "filter": "datum.year == year" },
+        { "calculate": "toNumber(datum.cumulative_population)", "as": "p" },
+        { "calculate": "toNumber(datum.cumulative_income)", "as": "L" },
+
+        {
+          "lookup": "year",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/gini_index_data.csv",
+              "format": { "type": "csv" }
+            },
+            "key": "year",
+            "fields": ["gini_index"]
+          }
+        },
+        { "calculate": "toNumber(datum.gini_index)", "as": "gini_tennis" },
+
+        {
+          "calculate": "\"ATP Tour (Gini \" + format(datum.gini_tennis, \".3f\") + \")\"",
+          "as": "series_key"
+        }
+      ],
+      "mark": { "type": "line", "strokeWidth": 3 },
+      "encoding": {
+        "color": {
+          "field": "series_key",
+          "type": "nominal",
+          "title": null,
+          "sort": "ascending",
+          "scale": { "range": ["#0033A0", "#F4D03F", "#FF7F0E"] },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "title": null,
+            "labelExpr": "replace(datum.value, '^[0-9]\\\\|', '')"
+          }
+        },
+        "tooltip": [
+          { "field": "p", "type": "quantitative", "format": ".1%", "title": "Cumulative players" },
+          { "field": "L", "type": "quantitative", "format": ".1%", "title": "Cumulative prize money" }
+        ]
+      }
+    },
+
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/main/Project/data/countries_lorenz_curves.csv",
+        "format": { "type": "csv" }
+      },
+      "transform": [
+        { "filter": "datum.year == year" },
+        { "filter": "datum.country_name == 'Norway' || datum.country_name == 'Colombia'" },
+
+        { "calculate": "toNumber(datum.p)", "as": "p" },
+        { "calculate": "toNumber(datum.lorenz)", "as": "L" },
+
+        { "calculate": "datum.country_code + '_' + toString(datum.year)", "as": "join_key" },
+
+{
+  "lookup": "join_key",
+  "from": {
+    "data": {
+      "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/country_gini_selected.csv",
+      "format": { "type": "csv" }
+    },
+    "key": "join_key",
+    "fields": ["gini"]
+  }
+},
+{ "calculate": "toNumber(datum.gini) / 100", "as": "gini_01" },
+{
+  "calculate": "datum.country_name == 'Norway' ? ('Norway (Gini ' + format(datum.gini_01, '.3f') + ')') : ('Colombia (Gini ' + format(datum.gini_01, '.3f') + ')')",
+  "as": "series_key"
+},
+
+        { "calculate": "toNumber(datum.gini) / 100", "as": "gini_01" },
+
+        {
+          "calculate": "datum.country_name == 'Norway' ? ('Norway (Gini ' + format(datum.gini_01, '.3f') + ')') : ('Colombia (Gini ' + format(datum.gini_01, '.3f') + ')')",
+          "as": "series_key"
+        }
+      ],
+      "mark": { "type": "line", "strokeWidth": 3 },
+      "encoding": {
+        "color": {
+          "field": "series_key",
+          "type": "nominal",
+          "sort": "ascending",          
+          "scale": { "range": ["#0033A0", "#F4D03F", "#FF7F0E"] },
+          "legend": null
+        },
+        "tooltip": [
+          
+          { "field": "p", "type": "quantitative", "format": ".1%", "title": "Cumulative population" },
+          { "field": "L", "type": "quantitative", "format": ".1%", "title": "Cumulative income" }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": { "stroke": "#d9d9d9" },
+    "font": "Segoe UI",
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": "normal",
+      "gridColor": "#e6e6e6",
+      "domainColor": "#bdbdbd",
+      "tickColor": "#bdbdbd"
+    },
+    "legend": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "symbolStrokeWidth": 3
+    }
+  }
+}

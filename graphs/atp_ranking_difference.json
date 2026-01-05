@@ -1,0 +1,209 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Points by ranking (2025).",
+  "title": {
+    "text": "Distance in points accumulated by ranking",
+    "fontSize": 24,
+    "fontWeight": "normal",
+    "anchor": "middle",
+    "subtitle": "2025 season",
+    "subtitleFontSize": 16
+  },
+  "width": 450,
+  "height": 150,
+  "padding": {"left": 85, "right": 10, "top": 5, "bottom": 5},
+  "background": "white",
+  "view": { "fill": "white", "strokeOpacity": 0},
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/main/data/atp_ranking_2025.csv",
+    "format": {
+      "type": "csv",
+      "parse": { "rank": "number", "points": "number" }
+    }
+  },
+
+"transform": [
+  { "joinaggregate": [{ "op": "max", "field": "rank", "as": "max_rank" }] },
+  {
+    "calculate": "datum.rank==1 || datum.rank==2 || datum.rank==3 || datum.rank==datum.max_rank",
+    "as": "highlight"
+  },
+  { "calculate": "'N°' + datum.rank", "as": "rank_label" },
+  { "calculate": "'Points: ' + datum.points", "as": "points_label" },
+
+  { "filter": "datum.highlight" },
+
+  {
+    "window": [
+      { "op": "lag", "field": "points", "as": "prev_points" },
+      { "op": "lead", "field": "points", "as": "next_points" }
+    ],
+    "sort": [{ "field": "points", "order": "ascending" }]
+  },
+  { "calculate": "isValid(datum.prev_points) ? datum.points - datum.prev_points : null", "as": "diff_prev" },
+  { "calculate": "isValid(datum.next_points) ? datum.points - datum.next_points : null", "as": "diff_next" },
+  { "calculate": "isValid(datum.diff_prev) ? abs(datum.diff_prev) : 1000", "as": "gap_prev" },
+  { "calculate": "isValid(datum.diff_next) ? abs(datum.diff_next) : 1000", "as": "gap_next" },
+  { "calculate": "datum.gap_prev <= datum.gap_next ? datum.diff_prev : datum.diff_next", "as": "diff_neigh" },
+  { "calculate": "min(datum.gap_prev, datum.gap_next)", "as": "min_gap" },
+  { "calculate": "datum.min_gap < 1000", "as": "needs_push" },
+  {
+    "calculate": "datum.highlight && datum.needs_push ? (datum.points + (datum.diff_neigh > 0 ? 500 : -500)) : datum.points",
+    "as": "points_adj"
+  }
+  ],
+
+  "layer": [
+    {
+      "mark": { "type": "rule", "strokeWidth": 2, "opacity": 0.5, "dy": 20 },
+      "encoding": {
+        "x": { "aggregate": "min", "field": "points", "type": "quantitative", 
+        "axis": {"title": null} },
+        "x2": { "aggregate": "max", "field": "points" }
+      }
+    },
+
+    {
+      "transform": [{ "filter": "datum.highlight" }],
+      "mark": { "type": "circle", "size": 200, "stroke": "white", "strokeWidth": 1.5 },
+      "encoding": {
+        "x": { "field": "points", "type": "quantitative", "axis": null },
+        "color": { "value": "#4c78a8" }
+      }
+    },
+
+    {
+  "transform": [{ "filter": "datum.highlight" }],
+  "mark": { "type": "rule", "strokeWidth": 1.2, "opacity": 0.8, "dy": 20},
+  "encoding": {
+    "x": { "field": "points", "type": "quantitative" },
+    "x2": { "field": "points_adj" },
+    "y2": { "value": 98 }
+  }
+},
+
+{
+  "transform": [{ "filter": "datum.highlight" }],
+  "mark": { "type": "point", "shape": "triangle-down", "size": 60, "color": "black", "fill" : "black"},
+  "encoding": {
+    "x": { "field": "points_adj", "type": "quantitative" },
+    "y": { "value": 98 }
+  }
+},
+
+    {
+  "transform": [
+    { "calculate": "datum.rank == 3 ? datum.points : null", "as": "p3_tmp" },
+    {
+      "joinaggregate": [
+        { "op": "max", "field": "rank", "as": "max_rank" },
+        { "op": "max", "field": "p3_tmp", "as": "rank3_points" }
+      ],
+      "groupby": []
+    },
+    { "filter": "datum.rank == 2 || datum.rank == datum.max_rank" },
+
+    { "calculate": "min(datum.points, datum.rank3_points)", "as": "x_left" },
+    { "calculate": "max(datum.points, datum.rank3_points)", "as": "x_right" },
+    { "calculate": "(datum.points + datum.rank3_points)/2", "as": "x_mid" },
+    { "calculate": "format(datum.diff_rank_three, ',.0f') + ' points difference'", "as": "diff_label"}
+  ],
+  "layer": [
+    {
+      "mark": { "type": "rule", "strokeWidth": 1.6, "opacity": 0.75 },
+      "encoding": {
+        "x": { "field": "x_left", "type": "quantitative" },
+        "x2": { "field": "x_right" },
+        "y": { "value": 50 }
+      }
+    },
+    {
+      "mark": { "type": "rule", "strokeWidth": 1.6, "opacity": 0.75 },
+      "encoding": {
+        "x": { "field": "x_left", "type": "quantitative" },
+        "y": { "value": 50 },
+        "y2": { "value": 65 }
+      }
+    },
+    {
+      "mark": { "type": "rule", "strokeWidth": 1.6, "opacity": 0.75 },
+      "encoding": {
+        "x": { "field": "x_right", "type": "quantitative" },
+        "y": { "value": 50 },
+        "y2": { "value": 65 }
+      }
+    },
+    {
+      "mark": { "type": "rule", "strokeWidth": 1.6, "opacity": 0.75 },
+      "encoding": {
+        "x": { "field": "x_mid", "type": "quantitative" },
+        "y": { "value": 50 },
+        "y2": { "value": 40 }
+      }
+    },
+    {
+      "mark": { "type": "text", "fontSize": 14, "fontWeight": "bold" },
+      "encoding": {
+        "x": { "field": "x_mid", "type": "quantitative" },
+        "y": { "value": 25 },
+        "text": { "field": "diff_label", "type": "nominal"}
+      }
+    }
+  ]
+},
+
+ {
+  "layer": [
+
+    {
+  "mark": { "type": "text", "dy": 35, "fontSize": 14, "fontWeight": "bold", "align": "left" },
+  "encoding": {
+    "x": { "value": -100 },
+    "text": { "value": "Player:" }
+  }
+},
+{
+  "mark": { "type": "text", "dy": 50, "fontSize": 14, "fontWeight": "bold", "align": "left" },
+  "encoding": {
+    "x": { "value": -100 },
+    "text": { "value": "Ranking:" }
+  }
+},
+{
+  "mark": { "type": "text", "dy": 65, "fontSize": 14, "fontWeight": "bold", "align": "left" },
+  "encoding": {
+    "x": { "value": -100 },
+    "text": { "value": "Points:" }
+  }
+},
+
+    {
+      "mark": { "type": "text", "dy": 35, "fontSize": 14, "fontWeight": "bold" },
+      "encoding": {
+        "x": { "field": "points_adj", "type": "quantitative" },
+        "text": { "field": "last_name" }
+      }
+    },
+    {
+      "mark": { "type": "text", "dy": 50, "fontSize": 14, "fontWeight": "bold" },
+      "encoding": {
+        "x": { "field": "points_adj", "type": "quantitative" },
+        "text": { "field": "rank_label" }
+      }
+    },
+    {
+      "mark": { "type": "text", "dy": 65, "fontSize": 14, "fontWeight": "bold" },
+      "encoding": {
+        "x": { "field": "points_adj", "type": "quantitative" },
+        "text": { "field": "points" }
+      }
+    }
+  ]
+}
+
+
+  ],
+
+  "config": { "text": { "font": "calibri" } }
+}

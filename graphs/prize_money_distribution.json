@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Density of prize money (USD) by year with ranking cutoff.",
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Prize money density distribution",
+    "subtitle": "Select a year and filter by ranking cutoff",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 14
+  },
+  "view": {"strokeWidth": 0},
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/Project/data/players_prize_by_year.csv",
+    "format": { "type": "csv" }
+  },
+  "params": [
+    {
+      "name": "year",
+      "value": 2025,
+      "bind": { "input": "range", "min": 2014, "max": 2025, "step": 1, "name": "Year: " }
+    },
+    {
+      "name": "rank_cutoff",
+      "value": 2000,
+      "bind": { "input": "range", "min": 1, "max": 2000, "step": 1, "name": "Ranking cutoff (max): " }
+    }
+  ],
+  "transform": [
+    { "calculate": "toNumber(datum.year)", "as": "year_num" },
+
+    {
+      "calculate": "isValid(datum.rank) ? toNumber(datum.rank) : toNumber(datum.ranking)",
+      "as": "rank_num"
+    },
+
+    {
+      "calculate": "isValid(datum.prize_usd) ? toNumber(datum.prize_usd) : toNumber(datum.prize)",
+      "as": "prize_usd_num"
+    },
+
+    { "filter": "datum.year_num === year" },
+    { "filter": "datum.rank_num <= rank_cutoff" },
+    { "filter": "isValid(datum.prize_usd_num) && datum.prize_usd_num > 0" },
+
+    {
+      "density": "prize_usd_num",
+      "bandwidth": 50000
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "line": { "color": "#0033A0", "strokeWidth": 2 },
+    "color": "#0033A0",
+    "opacity": 0.25
+  },
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Prize money (USD)",
+      "axis": { "grid": false, "labelAngle": 0 }
+    },
+    "y": {
+      "field": "density",
+      "type": "quantitative",
+      "title": "Density",
+      "axis": { "grid": false }
+    },
+    "tooltip": [
+      { "field": "value", "type": "quantitative", "title": "Prize (USD)", "format": ",.0f" }
+    ]
+  },
+  "config": {
+    "view": { "stroke": "#d9d9d9" },
+    "font": "Segoe UI",
+    "axis": {
+      "labelFontSize": 14,
+      "titleFontSize": 14,
+      "titleFontWeight": "normal",
+      "grid": false
+    }
+  }
+}
