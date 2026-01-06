@@ -1,85 +1,84 @@
-FID,geom,fid,uprn,school_code,name,language,iaith,street,town,locality,postcode,status,statws,gender,rhyw,type,math,easting,northing,lat,lon
-indepent_schools_wales.1,POINT (254647 375434),1,10013461410,6606027,Treffos School,N/A,N/A,Llansadwrn,Nr Menai Bridge,,LL59 5SD,Open,Ar agor,,,,,254647,375434,53.2559631,-4.1803365
-indepent_schools_wales.2,POINT (249611 380327),2,10013463596,6606028,Caban Aur,N/A,N/A,Llanbedrgoch,Anglesey,,LL76 8NX,Open,Ar agor,,,,,249611,380327,53.298507,-4.2580805
-indepent_schools_wales.3,POINT (257386 371818),3,10070362826,6616008,St Gerards School Trust,N/A,N/A,Ffriddoedd Road,Bangor,,LL57 2EL,Open,Ar agor,,,,,257386,371818,53.2242256,-4.1376906
-indepent_schools_wales.4,POINT (280005 321891),4,10070356471,6616022,Aran Hall School,N/A,N/A,Rhydymain,Dolgellau,,LL40 2AR,Open,Ar agor,,,,,280005,321891,52.7812358,-3.780516
-indepent_schools_wales.5,POINT (236348.35 333986.87),5,200003176993,6616033,Teresa House,N/A,N/A,Golf Road,Pwllheli,,LL53 5PS,Open,Ar agor,,,,,236348.35,333986.87,52.8784013,-4.4332965
-indepent_schools_wales.6,POINT (258126 372140),6,10070349023,6616034,Bangor Independent School,N/A,N/A,The Old Canonry,Bangor,,LL57 1DT,Open,Ar agor,,,,,258126,372140,53.2273163,-4.1267578
-indepent_schools_wales.7,POINT (280248 380689),7,10023741483,6626017,St David's College,N/A,N/A,,Llandudno,,LL30 1RD,Open,Ar agor,,,,,280248,380689,53.3095745,-3.7987809
-indepent_schools_wales.8,POINT (284556 379000),8,200002948247,6626019,Rydal Penrhos,N/A,N/A,Pwllycrochan Avenue,Colwyn Bay,,LL29 7BT,Open,Ar agor,,,,,284556,379000,53.2953568,-3.7335419
-indepent_schools_wales.9,POINT (303672 374824),9,100100946287,6636013,Fairholme Preparatory School,N/A,N/A,Mount Road,St Asaph,,LL17 0DH,Open,Ar agor,,,,,303672,374824,53.2616555,-3.4455734
-indepent_schools_wales.10,POINT (313081 358546),10,10091600049,6636027,Ruthin School,N/A,N/A,Mold Road,Ruthin,,LL15 1EE,Open,Ar agor,,,,,313081,358546,53.116998,-3.3001241
-indepent_schools_wales.11,POINT (302576.42 337997.29),11,200004832725,6636040,The Branas School,N/A,N/A,Branas Isaf,Llandrillo,,LL21 0TA,Open,Ar agor,,,,,302576.42,337997.29,52.9305247,-3.4508141
-indepent_schools_wales.12,POINT (305504 365983),12,200004306800,6636041,Myddelton College,N/A,N/A,Peakes Lane,Denbigh,,LL16 3EN,Open,Ar agor,,,,,305504,365983,53.1825381,-3.4154952
-indepent_schools_wales.13,POINT (329927.19 358031.05),13,10013710648,6646004,Options Kinsale,N/A,N/A,Kinsale Hall,Llanerch-Y-Mor,,CH8 9DX,Open,Ar agor,,,,,329927.19,358031.05,53.1148535,-3.0483617
-indepent_schools_wales.14,POINT (329927.19 358031.05),14,100100252863,6646005,Bryn Tirion Hall School,N/A,N/A,Mold Road,Caergwrle,,LL12 9HA,Open,Ar agor,,,,,329927.19,358031.05,53.1148535,-3.0483617
-indepent_schools_wales.15,POINT (322890.25 362852.38),15,10013695299,6646006,The Haven,N/A,N/A,Upper Bryn Coch Lane,Mold,,CH7 4AE,Open,Ar agor,,,,,322890.25,362852.38,53.1572108,-3.1546343
-indepent_schools_wales.16,POINT (324345.57 355860.25),16,10090461617,6646007,Ysgol Y Rhos,N/A,N/A,Ffordd y Blaenau,Mold,,CH7 4NS,Open,Ar agor,,,,,324345.57,355860.25,53.0945799,-3.1312232
-indepent_schools_wales.17,POINT (333163.67 350149.52),17,100101051565,6656042,Woodlands Children's Development Centre,N/A,N/A,7 Pierces Square,Wrexham,,LL13 7NE,Open,Ar agor,,,,,333163.67,350149.52,53.0444332,-2.9983753
-indepent_schools_wales.18,POINT (327531 352533),18,10004526371,6656045,Carla House,N/A,N/A,Ruthin Road,Wrexham,,LL11 3UT,Open,Ar agor,,,,,327531,352533,53.0651193,-3.082913
-indepent_schools_wales.19,POINT (304195.3 228432.44),19,10011749255,6666000,Christ College,N/A,N/A,Brecon,Bronllys,,LD3 8AF,Open,Ar agor,,,,,304195.3,228432.44,51.9461167,-3.3952783
-indepent_schools_wales.20,POINT (319557.2 306858.3),20,10011762770,6666042,Amberleigh Residential Therapeutic School,N/A,N/A,Golfa Hall,Welshpool,,SY21 9AF,Open,Ar agor,,,,,319557.2,306858.3,52.6534781,-3.1905867
-indepent_schools_wales.21,POINT (320446.7 290853.42),21,10011778600,6666043,OneSchool Global UK Newtown Campus,N/A,N/A,Sarn,Newtown,,SY16 4EJ,Open,Ar agor,,,,,320446.7,290853.42,52.5097594,-3.1735929
-indepent_schools_wales.22,POINT (313378.7 235031.6),22,10011812454,6666047,Ty Bronllys,N/A,N/A,Trem-Y-Mynydd,Bronllys,,LD3 0LU,Open,Ar agor,,,,,313378.7,235031.6,52.0069411,-3.263373
-indepent_schools_wales.23,POINT (312192.3 296744.11),23,10011777840,6666048,Bettws Lifehouse,N/A,N/A,The Old School,Newtown,,SY16 3DS,Open,Ar agor,,,,,312192.3,296744.11,52.5614337,-3.2967449
-indepent_schools_wales.24,POINT (315014.3 294545.03),24,10011774476,6666051,The Potteries,N/A,N/A,,Abermule,,SY15 6JH,Open,Ar agor,,,,,315014.3,294545.03,52.5421176,-3.2545619
-indepent_schools_wales.25,POINT (326582 260516.74),25,10011741776,6666052,Summergil House School,N/A,N/A,Upper Womaston,Presteigne,,LD8 2PT,Open,Ar agor,,,,,326582,260516.74,52.2379347,-3.0765569
-indepent_schools_wales.26,POINT (320231.9 315439.4),26,10011768617,6666053,Trefnanney School,N/A,N/A,Gaer Lane,Meifod,,SY22 6XX,Open,Ar agor,,,,,320231.9,315439.4,52.7307021,-3.182697
-indepent_schools_wales.27,POINT (331771.9 297412.26),27,10011802788,6666054,Grace House,N/A,N/A,White Grit,Minsterely,,SY5 0JL,Open,Ar agor,,,,,331771.9,297412.26,52.5702507,-3.0081011
-indepent_schools_wales.28,POINT (184043 223847),28,200003248951,6686014,Marlowe St David's Education Unit,N/A,N/A,Brawdy Business Park,Haverfordwest,,SA62 6NP,Open,Ar agor,,,,,184043,223847,51.8712938,-5.1384738
-indepent_schools_wales.29,POINT (194438 216127),29,200003246778,6686015,Redhill Preparatory School,N/A,N/A,St David's Road,Haverfordwest,,SA61 2UR,Open,Ar agor,,,,,194438,216127,51.8059053,-4.9831114
-indepent_schools_wales.30,POINT (210895.19 214825.11),30,10023953247,6686016,Landsker Education,N/A,N/A,Northfield Road,Narberth,,SA67 7AA,Open,Ar agor,,,,,210895.19,214825.11,51.8000224,-4.7439943
-indepent_schools_wales.31,POINT (210205.42 216557.1),31,10091644754,6686018,Castle School,N/A,N/A,Narberth,Pembrokeshire,,SA67 8HB,Open,Ar agor,,,,,210205.42,216557.1,51.8153432,-4.7549341
-indepent_schools_wales.32,POINT (193648 207842),32,10009879850,6686019,Ty Cariad,N/A,N/A,Sentry Cottage,Jordanston,,SA73 1HN,Open,Ar agor,,,,,193648,207842,51.7312246,-4.9896326
-indepent_schools_wales.33,POINT (189346 227993),33,10009872610,6686020,Birribi Education,N/A,N/A,Brynteg,Newton Cross,,SA62 5HT,Open,Ar agor,,,,,189346,227993,51.9105451,-5.0640926
-indepent_schools_wales.34,POINT (213291.4 219925.46),34,10091646556,6686022,Redhill High School,N/A,N/A,Clynderwen House,Narberth,,SA66 7TF,Open,Ar agor,,,,,213291.4,219925.46,51.8466339,-4.7120345
-indepent_schools_wales.35,POINT (276538 234425),35,10009547684,6696002,Coleg Llanymddyfri,N/A,N/A,Queensway,Llandovery,,SA20 0EE,Open,Ar agor,,,,,276538,234425,51.9945143,-3.7996351
-indepent_schools_wales.36,POINT (254357 200556),36,10092964814,6696003,St Michael's School,N/A,N/A,Bryn,Llanelli,,SA14 9TU,Open,Ar agor,,,,,254357,200556,51.6848272,-4.1082173
-indepent_schools_wales.37,POINT (210951 224620),37,10009877761,6696008,Nant-y-cwm Steiner School,N/A,N/A,Llanycefn,Nr Clynderwen,,SA66 7QJ,Open,Ar agor,,,,,210951,224620,51.8880064,-4.7485408
-indepent_schools_wales.38,POINT (240339.59 206685.35),38,10024325259,6696015,Gwenllian Education Centre,N/A,N/A,Hillfield Villas,Kidwelly,,SA17 4UL,Open,Ar agor,,,,,240339.59,206685.35,51.7360813,-4.313628
-indepent_schools_wales.39,POINT (251584.92 200386.26),39,10024324344,6696016,Alternative Learning Company,N/A,N/A,Stebonheath Centre,Llanelli,,SA15 1NE,Open,Ar agor,,,,,251584.92,200386.26,51.682576,-4.1482153
-indepent_schools_wales.40,POINT (227965 216407),40,200002958416,6696017,Westward House School,N/A,N/A,The Old Library,Pentre Road,,SA33 4AA,Open,Ar agor,,,,,227965,216407,51.819745,-4.497481
-indepent_schools_wales.41,POINT (263539 193259),41,100101005948,6706001,Oakleigh House School ,N/A,N/A,38 Penlan Crescent,Uplands,,SA2 0RL,Open,Ar agor,,,,,263539,193259,51.6215644,-3.9726306
-indepent_schools_wales.42,POINT (264391.34 193020.55),42,10010024645,6706018,Ffynone House School,N/A,N/A,36 St James's Crescent,Uplands,,SA1 6DR,Open,Ar agor,,,,,264391.34,193020.55,51.6196279,-3.9602334
-indepent_schools_wales.43,POINT (267229.92 198430.4),43,10091614677,6706023,OneSchool Global UK Swansea Campus,N/A,N/A,Sway Road,Morriston,,SA6 6JA,Open,Ar agor,,,,,267229.92,198430.4,51.6689196,-3.9213107
-indepent_schools_wales.44,POINT (271888 195800),44,10009184936,6706026,Priority Childcare,N/A,N/A,Britannic House,Llandarcy Neath,,SA10 6JQ,Open,Ar agor,,,,,271888,195800,51.6463632,-3.8530257
-indepent_schools_wales.45,POINT (265183 193133),45,10010040181,6706027,Swansea Sixth Form College,N/A,N/A,18 Mansel St,Swansea,,SA1 5SG,Open,Ar agor,,,,,265183,193133,51.6208287,-3.9488484
-indepent_schools_wales.46,POINT (261530 189875),46,100101008129,6706028,Ty Dan Y Coed,N/A,N/A,Huntington Close,Swansea,,SA3 5AL,Open,Ar agor,,,,,261530,189875,51.5906651,-4.0002957
-indepent_schools_wales.47,POINT (286668 195597),47,200002955843,6716000,Tarren School ,N/A,N/A,Eastern Avenue,Neath Port Tablot,,SA13 3PB,Open,Ar agor,,,,,286668,195597,51.6477135,-3.6394415
-indepent_schools_wales.48,POINT (275718 210864),48,10009186492,6716001,Brynmorgan Villa,N/A,N/A,Upper Cwmtwrch,Ystalyfera,,SA9 2XG,Open,Ar agor,,,,,275718,210864,51.7826008,-3.8030769
-indepent_schools_wales.49,POINT (283745.01 177684.62),49,200002653312,6726073,St Clare's School,N/A,N/A,Newton,Porthcawl,,CF36 5NR,Open,Ar agor,,,,,283745.01,177684.62,51.4861265,-3.6757415
-indepent_schools_wales.50,POINT (293946.98 187030.79),50,200002661565,6726091,Genus Education,N/A,N/A,Ynys-y-Bwt House,Blackmill,,CF35 6EB,Open,Ar agor,,,,,293946.98,187030.79,51.5721435,-3.5316833
-indepent_schools_wales.51,POINT (318453 171510),51,64103136,6736021,Westbourne School,N/A,N/A,4 Hickman Road,Penarth,,CF64 2AJ,Open,Ar agor,,,,,318453,171510,51.4366954,-3.174571
-indepent_schools_wales.52,POINT (318979.42 172193.71),52,64013099,6736025,Headlands School,N/A,N/A,2 St Augustines Road,Penarth,,CF64 1YY,Open,Ar agor,,,,,318979.42,172193.71,51.4429175,-3.1671559
-indepent_schools_wales.53,POINT (293432 168107),53,64114122,6736091,Atlantic College,N/A,N/A,St Donat’s Castle,Llantwit Major,,CF61 1WF,Open,Ar agor,,,,,293432,168107,51.4019487,-3.533393
-indepent_schools_wales.54,POINT (321056 189333),54,43065096,6766088,Wyclif Independent Christian School,N/A,N/A,Wyndham Street,Machen,,CF83 8PU,Open,Ar agor,,,,,321056,189333,51.5972891,-3.1411282
-indepent_schools_wales.55,POINT (318175 188720),55,43086700,6766089,Mynydd Haf School,N/A,N/A,Newport Road,Caerphilly,,CF83 8BY,Open,Ar agor,,,,,318175,188720,51.5913669,-3.1825704
-indepent_schools_wales.56,POINT (350983.5 212785.3),56,200000955475,6796008,Monmouth School for Boys,N/A,N/A,Almshouse Street,Monmouth,,NP25 3XP,Open,Ar agor,,,,,350983.5,212785.3,51.8115449,-2.7124083
-indepent_schools_wales.57,POINT (351012.22 213510.58),57,100101032927,6796009,Monmouth School For Girls,N/A,N/A,24 Hereford Road,Monmouth,,NP25 5XT,Open,Ar agor,,,,,351012.22,213510.58,51.8180681,-2.7120945
-indepent_schools_wales.58,POINT (351934 213622),58,10033344942,6796010,Monmouth Schools Pre-Prep & Nursery,N/A,N/A,Dixton Lane,Monmouth,,NP25 3SY,Open,Ar agor,,,,,351934,213622,51.8191502,-2.6987384
-indepent_schools_wales.59,POINT (345742.79 215924.09),59,10033361286,6796013,Llangattock School Monmouth,N/A,N/A,Llangattock-Vibon-Avel,Monmouth,,NP25 5NG,Open,Ar agor,,,,,345742.79,215924.09,51.8392778,-2.7889126
-indepent_schools_wales.60,POINT (348149.26 211253.96),60,10033362737,6796014,Talocher School,N/A,N/A,Wonastow Road,Monmouth,,NP25 4DN,Open,Ar agor,,,,,348149.26,211253.96,51.7975208,-2.753287
-indepent_schools_wales.61,POINT (330011 191897),61,10013477020,6806003,Rougemont School,N/A,N/A,Malpas Road,Newport,,NP20 6QB,Open,Ar agor,,,,,330011,191897,51.621526,-3.0123782
-indepent_schools_wales.62,POINT (330464 187405),62,100100973637,6806005,Greenfields School,N/A,N/A,30 Stow Park Avenue,Newport,,NP20 4FN,Open,Ar agor,,,,,330464,187405,51.5811986,-3.0049437
-indepent_schools_wales.63,POINT (333129 187604),63,10090274814,6806006,Catch22 Include Wales,N/A,N/A,Cromwell Road,Newport,,NP19 0HS,Open,Ar agor,,,,,333129,187604,51.5833108,-2.9665259
-indepent_schools_wales.64,POINT (331196 187616),64,100100973455,6806007,Wadham College of Science,N/A,N/A,1 Park Square,Newport,,NP20 4EL,Open,Ar agor,,,,,331196,187616,51.5831855,-2.9944223
-indepent_schools_wales.65,POINT (332022.83 186932.55),65,10094537534,6806008,Sporting Chance,N/A,N/A,Usk Way,Newport,,NP20 2HZ,Open,Ar agor,,,,,332022.83,186932.55,51.5771418,-2.9823585
-indepent_schools_wales.66,POINT (329946 187476),66,100100973183,6806009,Ysgol Ty Monmouth,N/A,N/A,35 Bassaleg Road,Newport,,NP19 7EJ,Open,Ar agor,,,,,329946,187476,51.5817726,-3.0124324
-indepent_schools_wales.67,POINT (323044 181624),67,200002934523,6816004,St John's College,N/A,N/A,William Nicholls Drive,Old St Mellons,,CF3 5YX,Open,Ar agor,,,,,323044,181624,51.5282626,-3.1107435
-indepent_schools_wales.68,POINT (315682 177896),68,100101041104,6816012,The Cathedral School,N/A,N/A,Cardiff Road,Llandaff,,CF5 2YH,Open,Ar agor,,,,,315682,177896,51.4936972,-3.2159518
-indepent_schools_wales.69,POINT (318871 176963),69,10002531222,6816014,Kings Monkton School,N/A,N/A,6 West Grove,Cardiff,,CF24 3XL,Open,Ar agor,,,,,318871,176963,51.4857768,-3.1698113
-indepent_schools_wales.70,POINT (315921 177519),70,100101041103,6816024,Howell's School,N/A,N/A,Cardiff Road,Llandaff,,CF5 2YD,Open,Ar agor,,,,,315921,177519,51.4903437,-3.2124199
-indepent_schools_wales.71,POINT (309546.14 180871.43),71,10095458435,6816087,Craig Y Parc School,N/A,N/A,Heol y Parc,Pentyrch,,CF15 9NB,Open,Ar agor,,,,,309546.14,180871.43,51.5194938,-3.3050765
-indepent_schools_wales.72,POINT (319102 176915),72,100101043636,6816090,Cardiff Academy,N/A,N/A,40 - 41 The Parade,Roath,,CF24 3AB,Open,Ar agor,,,,,319102,176915,51.4853784,-3.1664741
-indepent_schools_wales.73,POINT (317836 177878),73,100101042721,6816093,Cardiff Muslim Primary School,N/A,N/A,Merthyr Street,Cathays,,CF24 4JL,Open,Ar agor,,,,,317836,177878,51.4938528,-3.1849273
-indepent_schools_wales.74,POINT (314078 181253),74,200002933055,6816094,Ty Coryton,N/A,N/A,27 Pendwyallt Road,Coryton,,CF14 7EF,Open,Ar agor,,,,,314078,181253,51.523633,-3.2398707
-indepent_schools_wales.75,POINT (317834 178550),75,100101040823,6816095,Red Rose School,N/A,N/A,Allensbank Crescent,Heath,,CF14 3PR,Open,Ar agor,,,,,317834,178550,51.4998936,-3.1851127
-indepent_schools_wales.76,POINT (314752.64 179331.36),76,100101042304,6816096,Cardiff Steiner School,N/A,N/A,Hawthorn Road West,Llandaff North,,CF14 2FL,Open,Ar agor,,,,,314752.64,179331.36,51.506461,-3.2296833
-indepent_schools_wales.77,POINT (313497 176750),77,200002938843,6816097,Ely Presbyterian Church School,N/A,N/A,4-6 Archer Road,Cardiff,,CF5 4FR,Open,Ar agor,,,,,313497,176750,51.4830646,-3.247137
-indepent_schools_wales.78,POINT (318971.04 176986.14),78,10092987384,6816098,Cardiff Muslim Academy,N/A,N/A,47 The Walk,Cardiff,,CF24 3AG,Open,Ar agor,,,,,318971.04,176986.14,51.4859992,-3.1683761
-indepent_schools_wales.79,POINT (317635 175198),79,100100890876,6816099,Ummul Mumineen Academy,N/A,N/A,142 Penarth Road,Cardiff,,CF11 6NJ,Open,Ar agor,,,,,317635,175198,51.4697311,-3.1871963
-indepent_schools_wales.80,POINT (315042 177720),80,10093728734,6816100,Cardiff Montessori School And Nursery,N/A,N/A,Fairwater Road,Llandaff,,CF5 2LN,Open,Ar agor,,,,,315042,177720,51.4920191,-3.2251261
-indepent_schools_wales.81,POINT (319018 176789),81,100101053608,6816101,Cardiff Sixth Form College,N/A,N/A,21-27 Newport Road,Cardiff,,CF24 0AA,Open,Ar agor,,,,,319018,176789,51.4842337,-3.1676547
-indepent_schools_wales.82,POINT (319685.88 176173.5),82,100100898545,6816102,ACT Schools,N/A,N/A,East Tyndall Street,Cardiff,,CF24 5ET,Open,Ar agor,,,,,319685.88,176173.5,51.4787962,-3.1578986
-indepent_schools_wales.83,POINT (319102 176915),83,100101043636,6816104,Eastward House,N/A,N/A,40/41 The Parade,Roath,,CF24 3AB,Open,Ar agor,,,,,319102,176915,51.4853784,-3.1664741
-indepent_schools_wales.84,,,,,,,,,,C,,,,,,,,,,,
+FID;geom;fid;uprn;school_code;name;language;iaith;street;town;locality;postcode;status;statws;gender;rhyw;type;math;easting;northing;lat;lon
+indepent_schools_wales.1;POINT (254647 375434);1;10013461410;6606027;Treffos School;N/A;N/A;Llansadwrn;Nr Menai Bridge;;LL59 5SD;Open;Ar agor;;;;;254647;375434;532.559.631;-41.803.365
+indepent_schools_wales.2;POINT (249611 380327);2;10013463596;6606028;Caban Aur;N/A;N/A;Llanbedrgoch;Anglesey;;LL76 8NX;Open;Ar agor;;;;;249611;380327;53.298.507;-42.580.805
+indepent_schools_wales.3;POINT (257386 371818);3;10070362826;6616008;St Gerards School Trust;N/A;N/A;Ffriddoedd Road;Bangor;;LL57 2EL;Open;Ar agor;;;;;257386;371818;532.242.256;-41.376.906
+indepent_schools_wales.4;POINT (280005 321891);4;10070356471;6616022;Aran Hall School;N/A;N/A;Rhydymain;Dolgellau;;LL40 2AR;Open;Ar agor;;;;;280005;321891;527.812.358;-3.780.516
+indepent_schools_wales.5;POINT (236348.35 333986.87);5;2,00003E+11;6616033;Teresa House;N/A;N/A;Golf Road;Pwllheli;;LL53 5PS;Open;Ar agor;;;;;236348.35;333986.87;528.784.013;-44.332.965
+indepent_schools_wales.6;POINT (258126 372140);6;10070349023;6616034;Bangor Independent School;N/A;N/A;The Old Canonry;Bangor;;LL57 1DT;Open;Ar agor;;;;;258126;372140;532.273.163;-41.267.578
+indepent_schools_wales.7;POINT (280248 380689);7;10023741483;6626017;St David's College;N/A;N/A;;Llandudno;;LL30 1RD;Open;Ar agor;;;;;280248;380689;533.095.745;-37.987.809
+indepent_schools_wales.8;POINT (284556 379000);8;2,00003E+11;6626019;Rydal Penrhos;N/A;N/A;Pwllycrochan Avenue;Colwyn Bay;;LL29 7BT;Open;Ar agor;;;;;284556;379000;532.953.568;-37.335.419
+indepent_schools_wales.9;POINT (303672 374824);9;1,00101E+11;6636013;Fairholme Preparatory School;N/A;N/A;Mount Road;St Asaph;;LL17 0DH;Open;Ar agor;;;;;303672;374824;532.616.555;-34.455.734
+indepent_schools_wales.10;POINT (313081 358546);10;10091600049;6636027;Ruthin School;N/A;N/A;Mold Road;Ruthin;;LL15 1EE;Open;Ar agor;;;;;313081;358546;53.116.998;-33.001.241
+indepent_schools_wales.11;POINT (302576.42 337997.29);11;2,00005E+11;6636040;The Branas School;N/A;N/A;Branas Isaf;Llandrillo;;LL21 0TA;Open;Ar agor;;;;;302576.42;337997.29;529.305.247;-34.508.141
+indepent_schools_wales.12;POINT (305504 365983);12;2,00004E+11;6636041;Myddelton College;N/A;N/A;Peakes Lane;Denbigh;;LL16 3EN;Open;Ar agor;;;;;305504;365983;531.825.381;-34.154.952
+indepent_schools_wales.13;POINT (329927.19 358031.05);13;10013710648;6646004;Options Kinsale;N/A;N/A;Kinsale Hall;Llanerch-Y-Mor;;CH8 9DX;Open;Ar agor;;;;;329927.19;358031.05;531.148.535;-30.483.617
+indepent_schools_wales.14;POINT (329927.19 358031.05);14;1,001E+11;6646005;Bryn Tirion Hall School;N/A;N/A;Mold Road;Caergwrle;;LL12 9HA;Open;Ar agor;;;;;329927.19;358031.05;531.148.535;-30.483.617
+indepent_schools_wales.15;POINT (322890.25 362852.38);15;10013695299;6646006;The Haven;N/A;N/A;Upper Bryn Coch Lane;Mold;;CH7 4AE;Open;Ar agor;;;;;322890.25;362852.38;531.572.108;-31.546.343
+indepent_schools_wales.16;POINT (324345.57 355860.25);16;10090461617;6646007;Ysgol Y Rhos;N/A;N/A;Ffordd y Blaenau;Mold;;CH7 4NS;Open;Ar agor;;;;;324345.57;355860.25;530.945.799;-31.312.232
+indepent_schools_wales.17;POINT (333163.67 350149.52);17;1,00101E+11;6656042;Woodlands Children's Development Centre;N/A;N/A;7 Pierces Square;Wrexham;;LL13 7NE;Open;Ar agor;;;;;333163.67;350149.52;530.444.332;-29.983.753
+indepent_schools_wales.18;POINT (327531 352533);18;10004526371;6656045;Carla House;N/A;N/A;Ruthin Road;Wrexham;;LL11 3UT;Open;Ar agor;;;;;327531;352533;530.651.193;-3.082.913
+indepent_schools_wales.19;POINT (304195.3 228432.44);19;10011749255;6666000;Christ College;N/A;N/A;Brecon;Bronllys;;LD3 8AF;Open;Ar agor;;;;;304195.3;228432.44;519.461.167;-33.952.783
+indepent_schools_wales.20;POINT (319557.2 306858.3);20;10011762770;6666042;Amberleigh Residential Therapeutic School;N/A;N/A;Golfa Hall;Welshpool;;SY21 9AF;Open;Ar agor;;;;;319557.2;306858.3;526.534.781;-31.905.867
+indepent_schools_wales.21;POINT (320446.7 290853.42);21;10011778600;6666043;OneSchool Global UK Newtown Campus;N/A;N/A;Sarn;Newtown;;SY16 4EJ;Open;Ar agor;;;;;320446.7;290853.42;525.097.594;-31.735.929
+indepent_schools_wales.22;POINT (313378.7 235031.6);22;10011812454;6666047;Ty Bronllys;N/A;N/A;Trem-Y-Mynydd;Bronllys;;LD3 0LU;Open;Ar agor;;;;;313378.7;235031.6;520.069.411;-3.263.373
+indepent_schools_wales.23;POINT (312192.3 296744.11);23;10011777840;6666048;Bettws Lifehouse;N/A;N/A;The Old School;Newtown;;SY16 3DS;Open;Ar agor;;;;;312192.3;296744.11;525.614.337;-32.967.449
+indepent_schools_wales.24;POINT (315014.3 294545.03);24;10011774476;6666051;The Potteries;N/A;N/A;;Abermule;;SY15 6JH;Open;Ar agor;;;;;315014.3;294545.03;525.421.176;-32.545.619
+indepent_schools_wales.25;POINT (326582 260516.74);25;10011741776;6666052;Summergil House School;N/A;N/A;Upper Womaston;Presteigne;;LD8 2PT;Open;Ar agor;;;;;326582;260516.74;522.379.347;-30.765.569
+indepent_schools_wales.26;POINT (320231.9 315439.4);26;10011768617;6666053;Trefnanney School;N/A;N/A;Gaer Lane;Meifod;;SY22 6XX;Open;Ar agor;;;;;320231.9;315439.4;527.307.021;-3.182.697
+indepent_schools_wales.27;POINT (331771.9 297412.26);27;10011802788;6666054;Grace House;N/A;N/A;White Grit;Minsterely;;SY5 0JL;Open;Ar agor;;;;;331771.9;297412.26;525.702.507;-30.081.011
+indepent_schools_wales.28;POINT (184043 223847);28;2,00003E+11;6686014;Marlowe St David's Education Unit;N/A;N/A;Brawdy Business Park;Haverfordwest;;SA62 6NP;Open;Ar agor;;;;;184043;223847;518.712.938;-51.384.738
+indepent_schools_wales.29;POINT (194438 216127);29;2,00003E+11;6686015;Redhill Preparatory School;N/A;N/A;St David's Road;Haverfordwest;;SA61 2UR;Open;Ar agor;;;;;194438;216127;518.059.053;-49.831.114
+indepent_schools_wales.30;POINT (210895.19 214825.11);30;10023953247;6686016;Landsker Education;N/A;N/A;Northfield Road;Narberth;;SA67 7AA;Open;Ar agor;;;;;210895.19;214825.11;518.000.224;-47.439.943
+indepent_schools_wales.31;POINT (210205.42 216557.1);31;10091644754;6686018;Castle School;N/A;N/A;Narberth;Pembrokeshire;;SA67 8HB;Open;Ar agor;;;;;210205.42;216557.1;518.153.432;-47.549.341
+indepent_schools_wales.32;POINT (193648 207842);32;10009879850;6686019;Ty Cariad;N/A;N/A;Sentry Cottage;Jordanston;;SA73 1HN;Open;Ar agor;;;;;193648;207842;517.312.246;-49.896.326
+indepent_schools_wales.33;POINT (189346 227993);33;10009872610;6686020;Birribi Education;N/A;N/A;Brynteg;Newton Cross;;SA62 5HT;Open;Ar agor;;;;;189346;227993;519.105.451;-50.640.926
+indepent_schools_wales.34;POINT (213291.4 219925.46);34;10091646556;6686022;Redhill High School;N/A;N/A;Clynderwen House;Narberth;;SA66 7TF;Open;Ar agor;;;;;213291.4;219925.46;518.466.339;-47.120.345
+indepent_schools_wales.35;POINT (276538 234425);35;10009547684;6696002;Coleg Llanymddyfri;N/A;N/A;Queensway;Llandovery;;SA20 0EE;Open;Ar agor;;;;;276538;234425;519.945.143;-37.996.351
+indepent_schools_wales.36;POINT (254357 200556);36;10092964814;6696003;St Michael's School;N/A;N/A;Bryn;Llanelli;;SA14 9TU;Open;Ar agor;;;;;254357;200556;516.848.272;-41.082.173
+indepent_schools_wales.37;POINT (210951 224620);37;10009877761;6696008;Nant-y-cwm Steiner School;N/A;N/A;Llanycefn;Nr Clynderwen;;SA66 7QJ;Open;Ar agor;;;;;210951;224620;518.880.064;-47.485.408
+indepent_schools_wales.38;POINT (240339.59 206685.35);38;10024325259;6696015;Gwenllian Education Centre;N/A;N/A;Hillfield Villas;Kidwelly;;SA17 4UL;Open;Ar agor;;;;;240339.59;206685.35;517.360.813;-4.313.628
+indepent_schools_wales.39;POINT (251584.92 200386.26);39;10024324344;6696016;Alternative Learning Company;N/A;N/A;Stebonheath Centre;Llanelli;;SA15 1NE;Open;Ar agor;;;;;251584.92;200386.26;51.682.576;-41.482.153
+indepent_schools_wales.40;POINT (227965 216407);40;2,00003E+11;6696017;Westward House School;N/A;N/A;The Old Library;Pentre Road;;SA33 4AA;Open;Ar agor;;;;;227965;216407;51.819.745;-4.497.481
+indepent_schools_wales.41;POINT (263539 193259);41;1,00101E+11;6706001;Oakleigh House School ;N/A;N/A;38 Penlan Crescent;Uplands;;SA2 0RL;Open;Ar agor;;;;;263539;193259;516.215.644;-39.726.306
+indepent_schools_wales.42;POINT (264391.34 193020.55);42;10010024645;6706018;Ffynone House School;N/A;N/A;36 St James's Crescent;Uplands;;SA1 6DR;Open;Ar agor;;;;;264391.34;193020.55;516.196.279;-39.602.334
+indepent_schools_wales.43;POINT (267229.92 198430.4);43;10091614677;6706023;OneSchool Global UK Swansea Campus;N/A;N/A;Sway Road;Morriston;;SA6 6JA;Open;Ar agor;;;;;267229.92;198430.4;516.689.196;-39.213.107
+indepent_schools_wales.44;POINT (271888 195800);44;10009184936;6706026;Priority Childcare;N/A;N/A;Britannic House;Llandarcy Neath;;SA10 6JQ;Open;Ar agor;;;;;271888;195800;516.463.632;-38.530.257
+indepent_schools_wales.45;POINT (265183 193133);45;10010040181;6706027;Swansea Sixth Form College;N/A;N/A;18 Mansel St;Swansea;;SA1 5SG;Open;Ar agor;;;;;265183;193133;516.208.287;-39.488.484
+indepent_schools_wales.46;POINT (261530 189875);46;1,00101E+11;6706028;Ty Dan Y Coed;N/A;N/A;Huntington Close;Swansea;;SA3 5AL;Open;Ar agor;;;;;261530;189875;515.906.651;-40.002.957
+indepent_schools_wales.47;POINT (286668 195597);47;2,00003E+11;6716000;Tarren School ;N/A;N/A;Eastern Avenue;Neath Port Tablot;;SA13 3PB;Open;Ar agor;;;;;286668;195597;516.477.135;-36.394.415
+indepent_schools_wales.48;POINT (275718 210864);48;10009186492;6716001;Brynmorgan Villa;N/A;N/A;Upper Cwmtwrch;Ystalyfera;;SA9 2XG;Open;Ar agor;;;;;275718;210864;517.826.008;-38.030.769
+indepent_schools_wales.49;POINT (283745.01 177684.62);49;2,00003E+11;6726073;St Clare's School;N/A;N/A;Newton;Porthcawl;;CF36 5NR;Open;Ar agor;;;;;283745.01;177684.62;514.861.265;-36.757.415
+indepent_schools_wales.50;POINT (293946.98 187030.79);50;2,00003E+11;6726091;Genus Education;N/A;N/A;Ynys-y-Bwt House;Blackmill;;CF35 6EB;Open;Ar agor;;;;;293946.98;187030.79;515.721.435;-35.316.833
+indepent_schools_wales.51;POINT (318453 171510);51;64103136;6736021;Westbourne School;N/A;N/A;4 Hickman Road;Penarth;;CF64 2AJ;Open;Ar agor;;;;;318453;171510;514.366.954;-3.174.571
+indepent_schools_wales.52;POINT (318979.42 172193.71);52;64013099;6736025;Headlands School;N/A;N/A;2 St Augustines Road;Penarth;;CF64 1YY;Open;Ar agor;;;;;318979.42;172193.71;514.429.175;-31.671.559
+indepent_schools_wales.53;POINT (293432 168107);53;64114122;6736091;Atlantic College;N/A;N/A;St Donat’s Castle;Llantwit Major;;CF61 1WF;Open;Ar agor;;;;;293432;168107;514.019.487;-3.533.393
+indepent_schools_wales.54;POINT (321056 189333);54;43065096;6766088;Wyclif Independent Christian School;N/A;N/A;Wyndham Street;Machen;;CF83 8PU;Open;Ar agor;;;;;321056;189333;515.972.891;-31.411.282
+indepent_schools_wales.55;POINT (318175 188720);55;43086700;6766089;Mynydd Haf School;N/A;N/A;Newport Road;Caerphilly;;CF83 8BY;Open;Ar agor;;;;;318175;188720;515.913.669;-31.825.704
+indepent_schools_wales.56;POINT (350983.5 212785.3);56;2,00001E+11;6796008;Monmouth School for Boys;N/A;N/A;Almshouse Street;Monmouth;;NP25 3XP;Open;Ar agor;;;;;350983.5;212785.3;518.115.449;-27.124.083
+indepent_schools_wales.57;POINT (351012.22 213510.58);57;1,00101E+11;6796009;Monmouth School For Girls;N/A;N/A;24 Hereford Road;Monmouth;;NP25 5XT;Open;Ar agor;;;;;351012.22;213510.58;518.180.681;-27.120.945
+indepent_schools_wales.58;POINT (351934 213622);58;10033344942;6796010;Monmouth Schools Pre-Prep & Nursery;N/A;N/A;Dixton Lane;Monmouth;;NP25 3SY;Open;Ar agor;;;;;351934;213622;518.191.502;-26.987.384
+indepent_schools_wales.59;POINT (345742.79 215924.09);59;10033361286;6796013;Llangattock School Monmouth;N/A;N/A;Llangattock-Vibon-Avel;Monmouth;;NP25 5NG;Open;Ar agor;;;;;345742.79;215924.09;518.392.778;-27.889.126
+indepent_schools_wales.60;POINT (348149.26 211253.96);60;10033362737;6796014;Talocher School;N/A;N/A;Wonastow Road;Monmouth;;NP25 4DN;Open;Ar agor;;;;;348149.26;211253.96;517.975.208;-2.753.287
+indepent_schools_wales.61;POINT (330011 191897);61;10013477020;6806003;Rougemont School;N/A;N/A;Malpas Road;Newport;;NP20 6QB;Open;Ar agor;;;;;330011;191897;51.621.526;-30.123.782
+indepent_schools_wales.62;POINT (330464 187405);62;1,00101E+11;6806005;Greenfields School;N/A;N/A;30 Stow Park Avenue;Newport;;NP20 4FN;Open;Ar agor;;;;;330464;187405;515.811.986;-30.049.437
+indepent_schools_wales.63;POINT (333129 187604);63;10090274814;6806006;Catch22 Include Wales;N/A;N/A;Cromwell Road;Newport;;NP19 0HS;Open;Ar agor;;;;;333129;187604;515.833.108;-29.665.259
+indepent_schools_wales.64;POINT (331196 187616);64;1,00101E+11;6806007;Wadham College of Science;N/A;N/A;1 Park Square;Newport;;NP20 4EL;Open;Ar agor;;;;;331196;187616;515.831.855;-29.944.223
+indepent_schools_wales.65;POINT (332022.83 186932.55);65;10094537534;6806008;Sporting Chance;N/A;N/A;Usk Way;Newport;;NP20 2HZ;Open;Ar agor;;;;;332022.83;186932.55;515.771.418;-29.823.585
+indepent_schools_wales.66;POINT (329946 187476);66;1,00101E+11;6806009;Ysgol Ty Monmouth;N/A;N/A;35 Bassaleg Road;Newport;;NP19 7EJ;Open;Ar agor;;;;;329946;187476;515.817.726;-30.124.324
+indepent_schools_wales.67;POINT (323044 181624);67;2,00003E+11;6816004;St John's College;N/A;N/A;William Nicholls Drive;Old St Mellons;;CF3 5YX;Open;Ar agor;;;;;323044;181624;515.282.626;-31.107.435
+indepent_schools_wales.68;POINT (315682 177896);68;1,00101E+11;6816012;The Cathedral School;N/A;N/A;Cardiff Road;Llandaff;;CF5 2YH;Open;Ar agor;;;;;315682;177896;514.936.972;-32.159.518
+indepent_schools_wales.69;POINT (318871 176963);69;10002531222;6816014;Kings Monkton School;N/A;N/A;6 West Grove;Cardiff;;CF24 3XL;Open;Ar agor;;;;;318871;176963;514.857.768;-31.698.113
+indepent_schools_wales.70;POINT (315921 177519);70;1,00101E+11;6816024;Howell's School;N/A;N/A;Cardiff Road;Llandaff;;CF5 2YD;Open;Ar agor;;;;;315921;177519;514.903.437;-32.124.199
+indepent_schools_wales.71;POINT (309546.14 180871.43);71;10095458435;6816087;Craig Y Parc School;N/A;N/A;Heol y Parc;Pentyrch;;CF15 9NB;Open;Ar agor;;;;;309546.14;180871.43;515.194.938;-33.050.765
+indepent_schools_wales.72;POINT (319102 176915);72;1,00101E+11;6816090;Cardiff Academy;N/A;N/A;40 - 41 The Parade;Roath;;CF24 3AB;Open;Ar agor;;;;;319102;176915;514.853.784;-31.664.741
+indepent_schools_wales.73;POINT (317836 177878);73;1,00101E+11;6816093;Cardiff Muslim Primary School;N/A;N/A;Merthyr Street;Cathays;;CF24 4JL;Open;Ar agor;;;;;317836;177878;514.938.528;-31.849.273
+indepent_schools_wales.74;POINT (314078 181253);74;2,00003E+11;6816094;Ty Coryton;N/A;N/A;27 Pendwyallt Road;Coryton;;CF14 7EF;Open;Ar agor;;;;;314078;181253;51.523.633;-32.398.707
+indepent_schools_wales.75;POINT (317834 178550);75;1,00101E+11;6816095;Red Rose School;N/A;N/A;Allensbank Crescent;Heath;;CF14 3PR;Open;Ar agor;;;;;317834;178550;514.998.936;-31.851.127
+indepent_schools_wales.76;POINT (314752.64 179331.36);76;1,00101E+11;6816096;Cardiff Steiner School;N/A;N/A;Hawthorn Road West;Llandaff North;;CF14 2FL;Open;Ar agor;;;;;314752.64;179331.36;51.506.461;-32.296.833
+indepent_schools_wales.77;POINT (313497 176750);77;2,00003E+11;6816097;Ely Presbyterian Church School;N/A;N/A;4-6 Archer Road;Cardiff;;CF5 4FR;Open;Ar agor;;;;;313497;176750;514.830.646;-3.247.137
+indepent_schools_wales.78;POINT (318971.04 176986.14);78;10092987384;6816098;Cardiff Muslim Academy;N/A;N/A;47 The Walk;Cardiff;;CF24 3AG;Open;Ar agor;;;;;318971.04;176986.14;514.859.992;-31.683.761
+indepent_schools_wales.79;POINT (317635 175198);79;1,00101E+11;6816099;Ummul Mumineen Academy;N/A;N/A;142 Penarth Road;Cardiff;;CF11 6NJ;Open;Ar agor;;;;;317635;175198;514.697.311;-31.871.963
+indepent_schools_wales.80;POINT (315042 177720);80;10093728734;6816100;Cardiff Montessori School And Nursery;N/A;N/A;Fairwater Road;Llandaff;;CF5 2LN;Open;Ar agor;;;;;315042;177720;514.920.191;-32.251.261
+indepent_schools_wales.81;POINT (319018 176789);81;1,00101E+11;6816101;Cardiff Sixth Form College;N/A;N/A;21-27 Newport Road;Cardiff;;CF24 0AA;Open;Ar agor;;;;;319018;176789;514.842.337;-31.676.547
+indepent_schools_wales.82;POINT (319685.88 176173.5);82;1,00101E+11;6816102;ACT Schools;N/A;N/A;East Tyndall Street;Cardiff;;CF24 5ET;Open;Ar agor;;;;;319685.88;176173.5;514.787.962;-31.578.986
+indepent_schools_wales.83;POINT (319102 176915);83;1,00101E+11;6816104;Eastward House;N/A;N/A;40/41 The Parade;Roath;;CF24 3AB;Open;Ar agor;;;;;319102;176915;514.853.784;-31.664.741
