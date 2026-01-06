@@ -69,7 +69,7 @@
         for both the men’s and women’s singles tournaments.
       </p>
 
-      <h3>Task 1. Chart 1: Winning prize money by event.</h3>
+      <h3>Chart 1: Winning prize money by event in Professional Tennis.</h3>
 
       <figure class="chart">
         <div id="Location1"></div>
@@ -84,19 +84,15 @@
       </script>
 
       <p>
-        Tennis is a highly unequal sport. Those who advance through consecutive rounds in major
-        tournaments are able to finance their seasons, while those who remain at lower levels face
-        severe financial constraints in developing their careers, since the costs of maintaining a
-        professional tennis life are higher than the prize money from smaller tournaments.
-        For lower-ranked players, qualifying for Wimbledon can be a financial lifesaver
-        for the entire season. Graph 2 shows that, in relative terms, prize money in the early rounds
+        Tennis is a highly unequal sport. For lower-ranked players, qualifying for Wimbledon can be a financial lifesaver
+        for the entire season. Chart 2 shows that, in relative terms, prize money in the early rounds
         of Wimbledon has increased more rapidly over the past 15 years than the amounts awarded in the
         final rounds. However, in absolute terms, the gap between early-round earnings and the top prizes
         is now even larger than it was 15 years ago. This means that, despite higher proportional gains for lower rounds,
         the overall structure remains highly unequal and may even reinforce perceptions of inequality.
       </p>
 
-      <h3>Task 2. Chart 2: Prize winnings by round</h3>
+      <h3>Chart 2: Prize winnings by round in Wimbledon</h3>
 
       <figure class="chart">
         <div id="Location2"></div>
@@ -117,15 +113,15 @@
 
       <p>In this task, I created 2 graphs using the create tool in the Economics Observatory Data Hub.</p>
 
+      <h3>Task 1. Great Britain Real GDP</h3>
+
       <p>
-        In the task 1, the chart illustrates the evolution of Great Britain's real GDP from 1955 to 2024. While the long-term trend shows a steady increase,
+        The chart illustrates the evolution of Great Britain's real GDP from 1955 to 2024. While the long-term trend shows a steady increase,
         the series includes several significant downturns, particularly over the past 35 years: the early-1990s recession,
         the 2008–2009 financial crises, and the sharp contraction during the COVID-19 pandemic. As shown in the figure, the pandemic
         produced the largest single drop in real GDP. However, among these three episodes, the post-COVID recovery was the fastest,
         with output returning to pre-pandemic levels within a relatively short period.
       </p>
-
-      <h3>Task 1. Great Britain Real GDP</h3>
 
       <figure class="chart">
         <div id="Location3"></div>
@@ -137,16 +133,16 @@
         vegaEmbed("#Location3", figure_3_spec);
       </script>
 
+      <h3>Task 2. Great Britain Unemployment</h3>
+
       <p>
-        Unemployment is closely related to overall economic performance, particularly during periods of crisis. Chart 4 shows the
-        unemployment rate in Great Britain from 1970 to 2025. When compared with Chart 3, it is possible to observe substantial
+        Unemployment is closely related to overall economic performance, particularly during periods of crisis. The chart shows the
+        unemployment rate in Great Britain from 1970 to 2025. When compared with real GDP, it is possible to observe substantial
         increases in unemployment during the major downturns: roughly 5 percentage points in the early-1990s recession, around 3 points
         during the 2008–2009 financial crisis, and about 2 points during the COVID-19 pandemic. A key insight from the figure is
         that unemployment typically takes longer to return to its pre-crisis levels than real GDP, reflecting slower adjustments
         in labour markets.
       </p>
-
-      <h3>Task 2. Great Britain Unemployment</h3>
 
       <figure class="chart">
         <div id="Location4"></div>
@@ -173,9 +169,20 @@
          consistently maintained a higher GDP per capita than Germany. South Korea provides another 
          illustrative case: despite lower productivity levels than the United Kingdom, its GDP per capita
          has exceeded that of the UK since the late 2010s. These cases suggest that factors beyond
-         productivity also play an important role in improving GDP per capita.</p>
+         productivity also play an important role in improving GDP per capita.
+        
+        </p>
 
-      <h3>Task 2. Chart 1: GDP per capita</h3>
+        <figure class="chart">
+        <div id="Location6"></div>
+        <figcaption>Source: Feenstra et al. - Penn World Table (2025). 
+          Data obtained from Our World in Data.</figcaption>
+      </figure>
+
+      <script>
+        let figure_6_spec = "graphs/productivity_ppp.json";
+        vegaEmbed("#Location6", figure_6_spec);
+      </script>
 
       <figure class="chart">
         <div id="Location5"></div>
@@ -188,18 +195,6 @@
         vegaEmbed("#Location5", figure_5_spec);
       </script>
 
-      <h3>Task 2. Chart 2: Productivity</h3>
-
-      <figure class="chart">
-        <div id="Location6"></div>
-        <figcaption>Source: Feenstra et al. - Penn World Table (2025). 
-          Data obtained from Our World in Data.</figcaption>
-      </figure>
-
-      <script>
-        let figure_6_spec = "graphs/productivity_ppp.json";
-        vegaEmbed("#Location6", figure_6_spec);
-      </script>
     </section>
 
     <!-- CC4 -->
@@ -224,12 +219,13 @@
         </figcaption>
       </figure>
 
-      <p>
-        I'm trying to replicate the exact graph using Vega Lite in Chart 7. The most challenging part was
-        distorting the y axis, which I couldn't achieve in Vega-Lite.
-      </p>
-
       <h3>Task 2. Replication of Piñera's crime graph</h3>
+
+      <p>
+        In this task I replicated the graph using Vega Lite. 
+        The most challenging part was truncating the y-axis so that the 2016 bar appeared
+        taller than it actually is. I couldn't make it look as tall as in the image.
+      </p>
 
       <figure class="chart">
         <div id="Location7"></div>
@@ -239,12 +235,12 @@
         vegaEmbed("#Location7", "graphs/replication_pinera_crime_graph.json");
       </script>
 
+      <h3>Task 3. Improving the victimisation rate graph</h3>
+
       <p>
         I improved the chart by using the full data series, correcting axis distortion, applying consistent scaling, clearer labels,
-        and period grouping to make trends clear.
+        and period grouping to make trends clear. I realized the 2010 data point was incorrect in the figure shown by the former president.
       </p>
-
-      <h3>Task 3. Improving the victimisation rate graph</h3>
 
       <figure class="chart">
         <div id="Location8"></div>
@@ -270,7 +266,7 @@
       <h3>Task 1. Using an API</h3>
 
       <p>
-        The chart below uses live temperature data from Open-Meteo.
+        The chart below uses live temperature data from Open-Meteo API.
       </p>
 
       <figure class="chart">
@@ -288,7 +284,7 @@
       <div class="api-description">
         <h4>API Functional Description</h4>
         <p>
-          The chart above uses the <strong>Open-Meteo Weather Forecast API</strong>, which provides free, no-key access to hourly and daily
+          The <strong>Open-Meteo Weather Forecast API</strong> provides free, no-key access to hourly and daily
           weather data. All requests are made to the base endpoint:
         </p>
 
@@ -326,13 +322,13 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
 
       <p>
       For this task, I scraped the table with the ATP rankings from the following 
-      <a href="https://www.atptour.com/en/rankings/singles">website.</a> 
+      <a href="https://www.atptour.com/en/rankings/singles">website</a>, as is not available for download in any format. 
       The code for downloading information from the website can be found in the following
-      <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/scripts/challenge_5_ranking_tennis_data.ipynb">
+      <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/challenge_5_ranking_tennis_data.ipynb">
       Colab notebook.</a>
       The notebook extracts the complete table with more than 2,000 players from the ATP ranking, 
       which contains the total points accumulated during the 2025 season for each player. 
-      This table is not available for download in CSV format. I had to clean up the table by removing 
+      Pandas' read_html function was very helpful in extracting the required table. I had to clean up the table by removing 
       columns and rows that were not necessary for the analysis. In addition, I had to fix the players' 
       names because they contained additional characters.
       </p>
@@ -348,7 +344,7 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
 
       <figure class="chart">
         <div id="Location10"></div>
-        <figcaption>Source: Retrieved from 
+        <figcaption>Source: Data scraped from 
           <a href="https://www.atptour.com/en/rankings/singles">
             ATP Tour Website.
             </a>
@@ -377,7 +373,7 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
         Returning to the ATP ranking chart from the previous challenge, 
         it is interesting to examine whether the top two players consistently 
         dominate across seasons. To explore this, this 
-        <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/scripts/challenge_6_atp_ranking_data_across_seasons.ipynb">
+        <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/challenge_6_atp_ranking_data_across_seasons.ipynb">
         Colab notebook</a> scrapes data for six additional seasons using a loop
         that retrieves the ATP year-end rankings for the 2004, 2008, 2012, 2016, 
         2020, and 2024 seasons.
@@ -386,7 +382,8 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
       <p>
         The six data sets can be found 
         <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/tree/main/data">
-        here</a>.
+        here</a> named atp_players_yyyy.json, where yyyy is the year of the corresponding
+        season.
       </p>
 
       <h3>Task 2. Building a Dashbord using a loop</h3>
@@ -397,7 +394,12 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
         It shows that the large point differences between the top two players and the rest of the rankings are not repeated in all periods. 
         The magnitude of the difference observed in 2025 can be compared to the 2016 season. However, in other seasons (particularly 2008 and 2020),
         the top of the rankings is more compressed. Overall, the pattern suggests that competitive dominance at the top of men's tennis is cyclical
-        rather than constant, with periods of extreme concentration alternating with more competitive seasons.
+        rather than constant, with periods of extreme concentration alternating with more competitive seasons. 
+      </p>
+
+      <p>
+        The most challenging aspect was visually aligning text, lines, and points to ensure
+        that all charts remained legible and consistent across seasons.
       </p>
      
       <figure class="charts">
@@ -407,7 +409,7 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
             <figure id="c4" class="chart"></figure>
             <figure id="c5" class="chart"></figure>
             <figure id="c6" class="chart"></figure>
-        <figcaption>Source: Retrieved from 
+        <figcaption>Source: Data scraped from 
           <a href="https://www.atptour.com/en/rankings/singles">
             ATP Tour Website.
           </a>
@@ -648,14 +650,49 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
     <section id="seventh_challenge" class="section-card">
       <h2>CC7: Maps. Base maps and choropleths</h2>
 
-      <p>In this task, I have to produce two maps. The coordinates map is about ... in Scotland whereas 
-         the choropleth shows ... in Wales.</p>
+      <p>
+         In this task, I produce two maps. The first is a point (coordinates) map showing 
+         independent schools in Wales, while the second is a choropleth map displaying the
+         economic inactivity rate by local authority in Scotland.
+      </p>
 
-      <h3>Map 1. Scotland coordinates map </h3>
+      <h3>Task 1. Wales coordinates map </h3>
+
+      <p>
+        The map shows Independent Schools in Wales, indicating the geographical location of 
+      private educational institutions. This is relevant for analysing educational 
+      segregation, unequal access, and territorial patterns in education.
+      </p>
+
+      <figure class="chart">
+        <div id="Location11"></div>
+        <figcaption>
+          Source: Independent schools obtained from 
+          <a href="https://datamap.gov.wales/layers/geonode:indepent_schools_wales">
+          DataMapWales</a>. 
+          Topo json for the shape of Wales obtained from 
+          <a href="https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_SCT_2025_05.topojson">class example</a>. 
+        </figcaption>
+      </figure>
+
+      <script>
+        let figure_11_spec = "maps/Wales_map.json";
+        vegaEmbed("#Location11", figure_11_spec);
+      </script>
+
+      <h3>Task 2. Scotland choropleth map </h3>
+
+      The map shows the economic inactivity rate by local authority in Scotland in 2023,
+      highlighting clear regional disparities, with higher rates in parts of the west and 
+      southwest and lower rates in the north and some eastern areas.
 
       <figure class="chart">
         <div id="Location12"></div>
-        <figcaption>Source: MAP?</figcaption>
+        <figcaption>Source: Scotland economic inactivity rate obtained from 
+          <a href="https://www.ons.gov.uk/explore-local-statistics/indicators/economic-inactivity-rate">ONS</a>. 
+          Topo json for the shape of Scotland obtained from 
+          <a href="https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_SCT_2025_05.topojson">class example</a>. 
+          </figcaption>
       </figure>
 
       <script>
@@ -669,16 +706,16 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
       <h2>CC8: Big data. Extracting a story from millions of prices.</h2>
 
       <p>
-        For this task, I will construct two time series using the AutoCPI database. 
-        I will compare purchases for breakfast and lunch at the most expensive and cheapest supermarkets.
+        For this task, I construct two time series using the AutoCPI database. 
+        I compare purchases for breakfast and lunch at the most expensive and cheapest supermarkets.
       </p>
 
       <p>
-        The code for the two graphs can be found here.
+        The code for the two graphs can be found <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/challenge_8_breakfast_and_lunch.ipynb">here</a>.
         The database used is AutoCPI (Davies and McElvoy, 2024). This database contains two files,
         one with the daily prices of supermarket products from July 2023 to November 2025 and the other 
         with the product descriptions. What I did was join the databases to obtain the product 
-        descriptions for each date. Then I used a class code to see which supermarkets had the highest
+        descriptions for each date. Then I reused a class code to see which supermarkets had the highest
         and lowest average and median prices. Supermarket 1 has the highest prices, while supermarket 5 
         has the lowest. However, store 5 has information up to March 2025, while store 1 has information 
         up to November 2025. Therefore, I discarded store 5 and replaced it with store 4, which has the 
@@ -754,7 +791,7 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
 
       <p>
         For this task, I am using two graph from my 
-        <a href="https://nicolasrojasv.github.io/Project/project_index.html"> Project</a>. 
+        <a href="https://nicolasrojasv.github.io/Project/project.html"> Project</a>. 
         The explanation of the data collection and cleaning process can be found there. 
       </p>
 
@@ -788,7 +825,7 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
 
       <figure class="chart">
         <div id="Location16"></div>
-        <figcaption>Source: ATP website and the World Bank API..</figcaption>
+        <figcaption>Source: ATP website and the World Bank API.</figcaption>
       </figure>
 
       <script>
@@ -802,7 +839,7 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
 
       <p>
         For this task, I am using two graph from my 
-        <a href="https://nicolasrojasv.github.io/Project/project_index.html"> Project</a>. 
+        <a href="https://nicolasrojasv.github.io/Project/project.html"> Project</a>. 
       </p>
 
       <h3>
@@ -831,7 +868,9 @@ https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.1&hourly=appar
       <p>
         The hypothesis is that players who accumulate higher total prize money over their careers tend to
         remain longer on the professional circuit, implying a positive relationship between cumulative
-        earnings and years on tour.
+        earnings and years on tour. The applied data analysis was performed in this 
+        <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/challenge_10_predicting_longevity_prize_money.ipynb">
+        workbook</a>.
       </p>
 
       <p>
