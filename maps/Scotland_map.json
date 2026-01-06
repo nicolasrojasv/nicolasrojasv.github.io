@@ -1,23 +1,57 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Basic map of Scotland using TopoJSON boundaries with custom projection settings.",
-  "title": "Scotland",
-  "width": 300,
-  "height": 400,
+  "description": "Choropleth map of Scotland showing economic inactivity rate by Local Authority District.",
+  "title": {"text": "Scotland Economic Inactivity Rate by Local Authority (2023)", 
+            "fontSize": 16},
+  "width": 350,
+  "height": 450,
   "data": {
-    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/scotland.topojson",
-    "format": {"type": "topojson", "feature": "data"}
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_SCT_2025_05.topojson",
+    "format": { "type": "topojson", "feature": "object_name" }
   },
+  "transform": [
+    {
+      "lookup": "properties.LAD25CD",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/data/economic-inactivity-rate-map-data.csv",
+          "format": { "type": "dsv", "delimiter": ";",
+          "parse": { "year": "number", "value": "number" }
+           }
+        },
+        "key": "area_code",
+        "fields": ["value", "year"]
+      }
+    },
+    {
+      "filter": "datum['year'] == 2023"
+    }
+  ],
   "mark": {
     "type": "geoshape",
-    "fill": "lightblue",
     "stroke": "white",
-    "strokeWidth": 1
+    "strokeWidth": 0.5
   },
-  "projection": {
-    "type": "mercator",
-    "scale": 2000,
-    "center": [-4, 57],
-    "translate": [150, 200]
-  }
+  "encoding": {
+    "color": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": { "scheme": "blueorange" },
+      "title": "Inactivity rate (%)"
+    },
+    "tooltip": [
+      {
+        "field": "properties.LAD25NM",
+        "type": "nominal",
+        "title": "Local Authority District"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Inactivity rate (%)",
+        "format": ".1f"
+      }
+    ]
+  },
+  "projection": { "type": "mercator" }
 }

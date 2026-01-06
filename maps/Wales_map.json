@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Wales map with independent schools plotted as points using geographic coordinates.",
+  "title": {
+            "text": "Independent Schools in Wales",
+            "fontSize": 16
+           },
+  "width": 350,
+  "height": 450,
+  "projection": { "type": "mercator" },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_WLS_2025_05.topojson",
+        "format": { "type": "topojson", "feature": "object_name" }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e9f5e9",
+        "stroke": "grey",
+        "strokeWidth": 0.6
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/refs/heads/main/data/indepent_schools_wales.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "mark": { "type": "circle", "size": 55, "opacity": 0.75, "stroke": "white", "strokeWidth": 0.5 },
+      "encoding": {
+        "longitude": { "field": "lon", "type": "quantitative" },
+        "latitude": { "field": "lat", "type": "quantitative" },
+        "tooltip": [
+          { "field": "name", "type": "nominal", "title": "School" },
+          { "field": "postcode", "type": "nominal", "title": "Postcode" },
+          { "field": "town", "type": "nominal", "title": "Town" },
+          { "field": "status", "type": "nominal", "title": "Status" }
+        ]
+      }
+    }
+  ]
+}
