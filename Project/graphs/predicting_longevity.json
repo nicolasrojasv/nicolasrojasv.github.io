@@ -35,6 +35,7 @@
           "title": "Actual years on tour",
           "axis": { "grid": false }
         },
+        "color": { "value": "#0033A0" },
         "tooltip": [
           { "field": "years_predicted_num", "type": "quantitative", "title": "Predicted years: ", "format": ".2f" },
           { "field": "years_actual_num", "type": "quantitative", "title": "Actual years: ", "format": ".0f" }

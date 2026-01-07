@@ -2,7 +2,10 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "title": {
     "text": "Career duration and cumulative prize money of retired players",
-    "subtitle": "Filter by cumulative prize money (2025 USD) using the slider"
+    "subtitle": "Filter by cumulative prize money (2025 USD) using the slider",
+    "anchor": "start",
+    "fontSize": 20,
+    "subtitleFontSize": 16
   },
   "width": 560,
   "height": 400,
@@ -43,14 +46,15 @@
           "field": "total_prize_usd_2025",
           "type": "quantitative",
           "title": "Cumulative prize money (USD, 2025)",
-          "axis": {"format": ",.0f", "grid": true, "tickCount": 6}
+          "axis": {"format": ",.0f", "grid": false, "tickCount": 6}
         },
         "y": {
           "field": "years_on_tour",
           "type": "quantitative",
           "title": "Career duration (years)",
-          "axis": {"grid": true}
+          "axis": {"grid": false}
         },
+        "color": { "value": "#0033A0" },
         "strokeWidth": {
           "condition": {"param": "hover", "value": 1.2},
           "value": 0
@@ -85,8 +89,9 @@
     }
   ],
   "config": {
-    "axis": {"labelFontSize": 12, "titleFontSize": 13, "titlePadding": 10},
-    "title": {"fontSize": 16, "subtitleFontSize": 12, "anchor": "start"}
+    "view": { "stroke": "#d9d9d9" },
+    "font": "Segoe UI",
+    "axis": { "labelFontSize": 14, "titleFontSize": 14, "titleFontWeight": "normal", "grid": false }
   }
 }
 
