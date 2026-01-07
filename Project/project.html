@@ -37,7 +37,9 @@
       <p class="eyebrow">PP434 · Automated Data Visualisation for Policymaking Final Project</p>
       <h1>The Economics of Survival in Men’s Professional Tennis</h1>
 
-      <h2>1. Aims</h2>
+      <h2>1. Introduction</h2>
+
+      <h3>1.1. Aims</h3>
       <p>
         This project examines the distribution of prize money in men’s professional tennis and assesses 
         how many players can realistically afford to make a living from the sport. To do so, it combines
@@ -47,6 +49,31 @@
         quantifying income inequality in the men’s circuit and approximating the ranking threshold at 
         which players achieve financial break-even 
         <a href="https://dx.doi.org/10.2139/ssrn.5206641">(Schoettl et al., 2025)</a>.
+      </p>
+
+      <h3>1.2. Building an ATP Prize Money Panel Dataset </h3>
+
+      <p>
+        This project contributes a new panel 
+        <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/data/players_activity.csv">
+        dataset</a> covering all ATP-ranked players active between the 2014 and 2025 
+        seasons. The dataset records prize money earned across all tournaments, and the
+        <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/scrape_price_money_atp_players.ipynb">
+        code</a> is designed to be easily extended to earlier players or future seasons by
+        expanding the date range. A key challenge was accessing the ATP website’s 
+        underlying API endpoints, as the platform does not allow straightforward data
+        extraction using standard Python scraping libraries. An unresolved challenge is 
+        finding a way to iterate over a longer time span, as the website blocks access
+        after extracting data for approximately eleven years. In addition to this dataset,
+        a separate file containing ATP player characteristics was constructed using this
+        code. To enable comparisons with country-level income inequality, Gini coefficient 
+        data were retrieved from the <a href="https://data.worldbank.org/indicator/SI.POV.GINI">
+        World Bank API</a>. Inflation adjustments were performed 
+        using data from the <a href="https://fred.stlouisfed.org/docs/api/fred/">
+        Federal Reserve Bank API</a>, which requires user authentication 
+        and an access key, while exchange rate data were obtained from the 
+        <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html">
+        European Central Bank</a>.
       </p>
 
     </section>
@@ -82,7 +109,13 @@
 
       <figure class="chart">
         <div id="Location1"></div>
-        <figcaption>Source: ATP website and the World Bank API.</figcaption>
+        <figcaption>
+          Source: Data scraped from the ATP website and the World Bank API | 
+          <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/ATP_inequality_analysis.ipynb">
+          Code </a>for data gathering and analysis | 
+          <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/graphs/atp_lorenz_curve_gini_v2.json">
+          Chart Code</a>.
+        </figcaption>
       </figure>
 
       <script>
@@ -90,35 +123,26 @@
       </script>
 
       <p>
-        To produce the previous chart, data on player activity were extracted using a 
-        <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/scripts/scrape_price_money_atp_players.ipynb">
-        Python script</a> for all ATP-ranked players active between the 2014 and 2025 seasons. One of the
-        main challenges was identifying how to access the data directly from the underlying API endpoints
-        used by the ATP website, as the site does not otherwise allow straightforward data extraction. 
-        To enable a comparison with national income inequality, data on the Gini coefficient were 
-        retrieved from the World Bank API, which provides country-level time series for this indicator.
-      </p>
-
-      <p>
-        When selecting different years, there is little variation in the ATP Tour’s Gini coefficient.
-        This is more clearly illustrated in the time-series chart, which shows that when all ranked
-        players are considered, inequality in ATP prize money has remained relatively stable over time.
-      </p>
-
-      <p>
-        Interacting with this chart reveals two insights that motivate an analysis of the financial
-        break-even point between prize money and the costs of a professional career. First, only when
-        the analysis is restricted to the top 200 players does the ATP Tour’s Gini coefficient reach 
-        levels comparable to Colombia’s, while for the top 50 players, inequality among tennis players
-        is lower than in the United States. Second, the slope of the ATP Tour Gini time series becomes
-        more negative when focusing on the top 300 players. That is, between 2014 and 2025, inequality 
-        within this group has declined, which may indicate that a larger share of players are reaching 
-        their financial break-even point.
+        Across years, the ATP Tour’s Gini coefficient shows little variation when all 
+        ranked players are considered, indicating relatively stable prize money inequality
+        over time. However, the time-series chart below reveals two key insights that
+        motivate an analysis of the financial break-even point: inequality reaches levels
+        comparable to Colombia only when the sample is restricted to the top 200 players,
+        while among the top 50 it is lower than in the United States; and when focusing on
+        the top 300 players, the Gini trend becomes more negative between 2014 and 2025,
+        suggesting a decline in inequality that may reflect a growing share of players 
+        reaching their financial break-even point.
       </p>
 
       <figure class="chart">
         <div id="Location2"></div>
-        <figcaption>Source: ATP website and the World Bank API.</figcaption>
+        <figcaption>
+          Source: Data scraped from the ATP website and the World Bank API |
+          <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/ranking_cutoff_gini_time_series.ipynb">
+          Code </a>for data gathering and analysis | 
+          <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/graphs/gini_time_series.json">
+          Chart Code</a>.
+        </figcaption>
       </figure>
 
       <script>
@@ -135,25 +159,22 @@
       <h2>2. Are more players achieving financial equilibrium?</h2>
 
       <p>
-        Balliauw et al. (2017) estimates that in 2015 the average annual cost of competing on the professional 
-        tennis circuit was €76,073, which corresponds to USD 82,821, based on the exchange rate as of 31
-        December 2015, according to the <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html">
-        European Central Bank</a>. Because prize money is reported in nominal dollars for each year, 
-        the average annual cost was adjusted for inflation using the Consumer Price Index (CPI) as 
-        of December of each year, obtained from <a href="https://www.bls.gov/data/inflation_calculator.htm">
-        the U.S. Bureau of Labor Statistics</a>.
-      </p>
-
-      <p>
-        Before answering the question, let us look at the distribution of prize money to better understand
-        the data. Because prize money is heavily concentrated at low values, a density plot obscures the
-        financial break-even point. An interactive line chart is therefore used to make visible
-        the threshold at which players begin to finance their professional careers through prize money.
+        To better understand the data, the distribution of prize money is examined first.
+        Because prize money is highly concentrated at low values, a density plot obscures
+        the financial break-even point; a line chart is therefore used to clearly identify
+        the threshold at which players begin to finance their professional careers through
+        prize money.
       </p>
 
       <figure class="chart">
         <div id="Location3"></div>
-        <figcaption>Source: ATP website.</figcaption>
+        <figcaption>
+          Source: Data scraped from the ATP website |
+          <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/analising_break_even_point.ipynb">
+          Code </a>for data gathering and analysis | 
+          <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/graphs/prize_money_distribution.json">
+          Chart Code</a>.
+        </figcaption>
       </figure>
 
       <script>
@@ -161,24 +182,27 @@
       </script>
 
       <p>
-        In 2025, professional tennis becomes financially sustainable from the world No. 274 onward,
-        with a positive balance of just USD 319. In other words, only 274 players out of more 
-        than 2,000 professional tennis players were able to fully finance their season through prize money
-        earned in tournaments. 
-      </p>
-
-      <p>
-        Compared with 2014, the break-even threshold has shifted downward: more than 80 additional players
-        are now able to cover the annual cost of competing on the professional circuit. This change 
-        suggests a modest but meaningful improvement in the financial sustainability of professional 
-        tennis over the past decade.
+        According to Balliauw et al. (2017), the average annual cost of competing on the
+        professional tennis circuit is USD 113,494 in 2025, after adjusting for inflation 
+        and exchange rates. Therefore, professional tennis becomes financially sustainable
+        from world No. 274 onward, where this player achieves a marginally positive balance of 
+        USD 319. In other words, only 274 out of more than 2,000 professional players fully
+        finance their season through prize money. Compared with 2014, the break-even 
+        threshold has shifted downward by more than 80 ranking positions, 
+        indicating a modest but meaningful improvement in the financial sustainability of
+        professional tennis over the past decade.
       </p>
 
       <figure class="chart">
         <div id="Location4"></div>
         <figcaption>
-          Source: ATP website, Balliauw et al. (2017), the European Central Bank and 
-          U.S. Bureau of Labor Statistics.</figcaption>
+          Source: Data scraped from the ATP website, Balliauw et al. (2017), the European Central Bank and 
+          U.S. Bureau of Labor Statistics |
+          <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/analising_break_even_point.ipynb">
+          Code </a>for data gathering and analysis | 
+          <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/graphs/prize_money_vs_cost_benchmark.json">
+          Chart Code</a>.
+        </figcaption>
       </figure>
 
       <script>
@@ -186,20 +210,26 @@
       </script>
 
       <p>
-        The next time series chart shows a gradual improvement in the share of professional tennis 
-        players who are able to fully finance their season through prize money: in 2014, only about 7% of 
-        players reached the financial break-even point, increasing by 3.7 percentage points over a decade
-        to reach 10.7% in 2025. Overall, the trend suggests a modest but meaningful expansion in the
-        group of players reaching break-even, consistent with the downward shift in the break-even ranking
-        observed in earlier figures; however, the limited magnitude of this change indicates that
-        structural constraints in the professional tennis income model persist.
+        The next time-series chart shows a gradual improvement in the share of professional 
+        tennis players able to fully finance their season through prize money: in 2014, about
+        7% of players reached the financial break-even point, rising by 3.7 percentage points
+        to 10.7% in 2025. Overall, the trend indicates a modest but meaningful expansion in 
+        the group of players reaching break-even, consistent with the downward shift in the
+        break-even ranking observed in earlier figures; however, the limited magnitude of this
+        change suggests that structural constraints in the professional tennis income model 
+        persist.
       </p>
 
        <figure class="chart">
         <div id="Location5"></div>
         <figcaption>
-          Source: ATP website, Balliauw et al. (2017), the European Central Bank and 
-          U.S. Bureau of Labor Statistics.</figcaption>
+          Source: Data scraped from the ATP website, Balliauw et al. (2017), the European Central Bank and 
+          U.S. Bureau of Labor Statistics |
+          <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/analising_break_even_point.ipynb">
+          Code </a>for data gathering and analysis | 
+          <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/graphs/share_player_financial_break_even.json">
+          Chart Code</a>.
+        </figcaption>
       </figure>
 
       <script>
@@ -215,36 +245,53 @@
       <h2>3. The Predictor Power of Prize Money on Longevity</h2>
 
       <p>
-        Motivated by the fact that only a small fraction of professional tennis players are able to fully
-        finance their careers through prize money, this analysis examines whether cumulative prize 
-        earnings can predict career duration among retired players. The hypothesis is that players who
-        accumulate higher total prize money over their careers tend to remain longer on the professional
-        circuit, implying a positive relationship between cumulative earnings and years on tour.
+        Motivated by the fact that only a small share of professional tennis players can 
+        fully finance their careers through prize money, this analysis examines whether 
+        cumulative prize earnings predict career duration among retired players.
       </p>
 
       <p>
-        To construct the dataset used for prediction, a panel of ATP players’ prize money was compiled, 
-        adjusted all monetary values to constant 2025 USD, using the FRED API, and identified players 
-        no longer active in 2025 as retired. The sample was restricted to players who accumulated no more 
-        than USD 10 million over their careers, as the analysis focuses on players closer to the financial
-        threshold required to cover the total cost of a professional season, rather than on top earners 
-        whose careers are trivially sustainable. A Random Forest regression model was estimated using
-        scikit-learn, with performance evaluated on a test set using R² and RMSE.
+        Using an inflation-adjusted panel of ATP prize money (constant 2025 USD), 
+        retired players are defined as those inactive in 2025. An initial inspection of
+        the data reveals two extreme outliers—Roger Federer and Rafael Nadal. Even after
+        excluding them, a small group of players continues to accumulate prize money far
+        above the rest. Accordingly, the analysis restricts the sample to players earning
+        no more than USD 10 million, focusing on careers closer to the financial
+        sustainability threshold.
       </p>
 
+      <figure class="chart">
+        <div id="Location7"></div>
+        <figcaption>
+          Source: Data scraped from the ATP website | 
+          <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/predicting_longevity_prize_money.ipynb">
+          Code </a>for data gathering and analysis | 
+          <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/graphs/career_duration_vs_prize_money.json">
+          Chart Code</a>.
+        </figcaption>
+      </figure>
+
+      <script>
+        vegaEmbed("#Location7", "graphs/career_duration_vs_prize_money.json");
+      </script>
+
       <p>
-        The figure shows a clear positive relationship between predicted and actual career length. 
-        Although the R² is relatively high, it is important to note that the model exhibits substantial
-        dispersion when predicting shorter careers, frequently overestimating or underestimating career
-        length by as much as a factor of two. This pattern indicates that cumulative earnings alone do not
-        fully determine career longevity, pointing to the relevance of additional factors, such as injuries,
-        sponsorships or access to institutional support, in shaping professional tennis careers.
+        A Random Forest regression model estimated in scikit-learn shows a positive 
+        relationship between cumulative earnings and career length; however, despite a
+        relatively high R², substantial dispersion, particularly for short careers, suggests
+        that earnings alone do not determine longevity, highlighting the role of 
+        additional factors such as injuries, sponsorships, and institutional support.
       </p>
 
       <figure class="chart">
         <div id="Location6"></div>
-        <figcaption>
-          Source: ATP website and The Federal Reserve Bank.</figcaption>
+         <figcaption>
+          Source: Data scraped from the ATP website and the Federal Reserve Bank | 
+          <a href="https://colab.research.google.com/github/nicolasrojasv/nicolasrojasv.github.io/blob/main/predicting_longevity_prize_money.ipynb">
+          Code </a>for data gathering and analysis | 
+          <a href="https://github.com/nicolasrojasv/nicolasrojasv.github.io/blob/main/Project/graphs/predicting_longevity.json">
+          Chart Code</a>.
+        </figcaption>
       </figure>
 
       <script>
@@ -261,17 +308,18 @@
       <h2>4. Conclusion and Discusion</h2>
 
       <p>
-        This project highlights the extremely high levels of income inequality in men’s professional 
-        tennis and the very small proportion of players who are able to finance the cost of a full 
-        competitive season through prize money, reinforcing recent findings in the literature on ATP 
-        Tour financing (Balliauw et al., 2017; Schoettl et al., 2025). Its main contribution is the
-        integration of a temporal perspective, which allows the evolution of the financial break-even
-        point to be analysed over time. The newly constructed panel dataset and publicly available code
-        enable regular updates and extensions of the analysis, encouraging further research on policies 
-        aimed at improving the financial sustainability of professional tennis careers. 
-        A remaining challenge is that annual costs were adjusted for inflation, while actual costs may
-        have risen faster, potentially leading to an overestimation of the share of players reaching 
-        break-even. An issue that future work could address by automating and updating cost estimates.
+        This project highlights the extreme income inequality in men’s professional tennis
+        and the very small share of players able to finance a full competitive season 
+        through prize money, reinforcing recent findings in the literature 
+        (Balliauw et al., 2017; Schoettl et al., 2025). Its main contribution is the 
+        introduction of a temporal perspective, allowing the evolution of the financial
+        break-even point to be analysed over time. The newly constructed panel dataset 
+        and publicly available code support regular updates and extensions, encouraging 
+        further research on policies to improve the financial sustainability of 
+        professional tennis careers. A remaining limitation is that annual costs were
+        adjusted for inflation, while actual costs may have increased faster, potentially 
+        overstating the share of players reaching break-even—an issue future work could 
+        address by automating and updating cost estimates
       </p>
 
     </section>
