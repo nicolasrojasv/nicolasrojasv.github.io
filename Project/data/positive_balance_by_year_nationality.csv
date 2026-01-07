@@ -1,0 +1,1304 @@
+year,Nationality,NatlId,sum,count
+2014,Algeria,ALG,0,4
+2014,Andorra,AND,0,1
+2014,Argentina,ARG,10,111
+2014,Armenia,ARM,0,1
+2014,Australia,AUS,9,92
+2014,Austria,AUT,3,47
+2014,Bahamas,BAH,0,1
+2014,Bahrain,BRN,0,2
+2014,Barbados,BAR,0,1
+2014,Belarus,BLR,0,22
+2014,Belgium,BEL,3,39
+2014,Benin,BEN,0,3
+2014,Bolivia,BOL,0,8
+2014,Bosnia-Herzegovina,BIH,1,9
+2014,Botswana,BOT,0,1
+2014,Brazil,BRA,2,72
+2014,Bulgaria,BUL,1,19
+2014,Burkina Faso,BUR,0,1
+2014,Burundi,BDI,0,2
+2014,Cambodia,CAM,0,1
+2014,Canada,CAN,4,34
+2014,Chile,CHI,0,47
+2014,China,CHN,1,47
+2014,Chinese Taipei,TPE,2,23
+2014,Colombia,COL,3,41
+2014,"Congo, Dem. Rep. (Zaire)",COD,0,1
+2014,Croatia,CRO,6,42
+2014,Cuba,CUB,0,2
+2014,Cyprus,CYP,1,6
+2014,Czechia,CZE,4,52
+2014,Denmark,DEN,0,11
+2014,Dominican Republic,DOM,1,9
+2014,Ecuador,ECU,0,11
+2014,Egypt,EGY,0,9
+2014,El Salvador,ESA,0,2
+2014,Estonia,EST,1,7
+2014,Finland,FIN,1,18
+2014,France,FRA,19,167
+2014,Gabon,GAB,0,2
+2014,Georgia,GEO,0,6
+2014,Germany,GER,14,133
+2014,Ghana,GHA,0,3
+2014,Great Britain,GBR,5,94
+2014,Greece,GRE,0,11
+2014,Guadeloupe,GUD,0,1
+2014,Guatemala,GUA,0,1
+2014,Hong Kong,HKG,0,7
+2014,Hungary,HUN,1,10
+2014,India,IND,1,52
+2014,Indonesia,INA,0,3
+2014,Iran,IRI,0,11
+2014,Ireland,IRL,1,9
+2014,Israel,ISR,1,29
+2014,Italy,ITA,8,166
+2014,Ivory Coast,CIV,0,1
+2014,Jamaica,JAM,1,1
+2014,Japan,JPN,6,87
+2014,Kazakhstan,KAZ,3,16
+2014,Kenya,KEN,0,1
+2014,Kosovo,KOS,0,1
+2014,Kuwait,KUW,0,3
+2014,Kyrgyzstan,KGZ,0,1
+2014,Latvia,LAT,1,8
+2014,Lithuania,LTU,1,7
+2014,Luxembourg,LUX,1,3
+2014,Madagascar,MAD,0,2
+2014,Malaysia,MAS,0,4
+2014,Mali,MLI,0,1
+2014,Mexico,MEX,0,33
+2014,Moldova,MDA,1,4
+2014,Monaco,MON,0,3
+2014,Montenegro,MNE,0,3
+2014,Morocco,MAR,0,17
+2014,Namibia,NAM,0,1
+2014,Netherlands,NED,4,37
+2014,New Zealand,NZL,0,9
+2014,Nigeria,NGR,0,2
+2014,North Macedonia,MKD,0,5
+2014,Norway,NOR,0,5
+2014,Pakistan,PAK,0,6
+2014,Paraguay,PAR,0,1
+2014,Peru,PER,0,18
+2014,Philippines,PHI,0,6
+2014,Poland,POL,3,37
+2014,Portugal,POR,2,25
+2014,Puerto Rico,PUR,0,1
+2014,Qatar,QAT,0,2
+2014,Romania,ROU,2,52
+2014,Russia,RUS,8,99
+2014,San Marino,SMR,0,1
+2014,Serbia,SRB,4,42
+2014,Sierra Leone,SLE,0,1
+2014,Singapore,SGP,0,1
+2014,Slovak Republic,SVK,4,36
+2014,Slovenia,SLO,3,16
+2014,South Africa,RSA,1,27
+2014,South Korea,KOR,0,60
+2014,Spain,ESP,17,114
+2014,Sri Lanka,SRI,0,2
+2014,Sweden,SWE,0,32
+2014,Switzerland,SUI,3,36
+2014,Thailand,THA,0,26
+2014,Togo,TOG,0,3
+2014,Tunisia,TUN,1,9
+2014,Turkiye,TUR,1,20
+2014,Turkmenistan,TKM,0,1
+2014,Uganda,UGA,0,1
+2014,Ukraine,UKR,3,43
+2014,United Arab Emirates,UAE,0,1
+2014,United States,USA,14,182
+2014,Uruguay,URU,1,6
+2014,Uzbekistan,UZB,2,20
+2014,Venezuela,VEN,0,12
+2014,Vietnam,VIE,0,2
+2014,Zimbabwe,ZIM,0,7
+2015,Algeria,ALG,0,9
+2015,Andorra,AND,0,1
+2015,Argentina,ARG,10,102
+2015,Armenia,ARM,0,1
+2015,Australia,AUS,11,97
+2015,Austria,AUT,4,48
+2015,Bahamas,BAH,0,1
+2015,Bahrain,BRN,0,2
+2015,Barbados,BAR,0,1
+2015,Belarus,BLR,0,22
+2015,Belgium,BEL,4,44
+2015,Benin,BEN,0,3
+2015,Bolivia,BOL,0,9
+2015,Bosnia-Herzegovina,BIH,1,8
+2015,Botswana,BOT,0,1
+2015,Brazil,BRA,3,75
+2015,Bulgaria,BUL,1,20
+2015,Burkina Faso,BUR,0,1
+2015,Burundi,BDI,0,1
+2015,Cambodia,CAM,0,1
+2015,Canada,CAN,2,41
+2015,Chile,CHI,0,42
+2015,China,CHN,1,51
+2015,Chinese Taipei,TPE,1,29
+2015,Colombia,COL,3,40
+2015,"Congo, Dem. Rep. (Zaire)",COD,0,1
+2015,Costa Rica,CRC,0,1
+2015,Croatia,CRO,4,36
+2015,Cyprus,CYP,1,5
+2015,Czechia,CZE,3,53
+2015,Denmark,DEN,0,13
+2015,Dominican Republic,DOM,1,9
+2015,Ecuador,ECU,0,8
+2015,Egypt,EGY,0,15
+2015,El Salvador,ESA,0,2
+2015,Estonia,EST,1,9
+2015,Finland,FIN,1,18
+2015,France,FRA,15,188
+2015,Gabon,GAB,0,2
+2015,Georgia,GEO,1,8
+2015,Germany,GER,11,142
+2015,Ghana,GHA,0,2
+2015,Great Britain,GBR,5,90
+2015,Greece,GRE,0,15
+2015,Guadeloupe,GUD,0,1
+2015,Guatemala,GUA,0,3
+2015,Hong Kong,HKG,0,8
+2015,Hungary,HUN,0,11
+2015,India,IND,1,74
+2015,Indonesia,INA,0,5
+2015,Iran,IRI,0,13
+2015,Ireland,IRL,0,13
+2015,Israel,ISR,1,42
+2015,Italy,ITA,9,165
+2015,Ivory Coast,CIV,0,1
+2015,Jamaica,JAM,1,1
+2015,Japan,JPN,7,89
+2015,Kazakhstan,KAZ,3,19
+2015,Kosovo,KOS,0,1
+2015,Kuwait,KUW,0,5
+2015,Kyrgyzstan,KGZ,0,1
+2015,Latvia,LAT,1,8
+2015,Lebanon,LBN,0,2
+2015,Lithuania,LTU,1,8
+2015,Luxembourg,LUX,1,4
+2015,Madagascar,MAD,0,3
+2015,Malaysia,MAS,0,2
+2015,Mali,MLI,0,1
+2015,Mexico,MEX,0,30
+2015,Moldova,MDA,1,4
+2015,Monaco,MON,0,5
+2015,Montenegro,MNE,0,4
+2015,Morocco,MAR,0,17
+2015,Netherlands,NED,3,45
+2015,New Zealand,NZL,0,10
+2015,Nigeria,NGR,0,11
+2015,North Macedonia,MKD,0,7
+2015,Northern Mariana Islands,NMI,0,1
+2015,Norway,NOR,0,7
+2015,Pakistan,PAK,0,5
+2015,Peru,PER,0,13
+2015,Philippines,PHI,0,7
+2015,Poland,POL,2,40
+2015,Portugal,POR,2,31
+2015,Puerto Rico,PUR,0,2
+2015,Qatar,QAT,0,2
+2015,Romania,ROU,1,48
+2015,Russia,RUS,6,102
+2015,Serbia,SRB,5,44
+2015,Sierra Leone,SLE,0,1
+2015,Singapore,SGP,0,1
+2015,Slovak Republic,SVK,3,38
+2015,Slovenia,SLO,3,18
+2015,South Africa,RSA,1,22
+2015,South Korea,KOR,1,56
+2015,Spain,ESP,18,125
+2015,Sri Lanka,SRI,0,2
+2015,Sweden,SWE,1,35
+2015,Switzerland,SUI,2,39
+2015,Thailand,THA,0,22
+2015,Togo,TOG,0,1
+2015,Tunisia,TUN,1,10
+2015,Turkiye,TUR,1,26
+2015,Turkmenistan,TKM,0,1
+2015,Uganda,UGA,0,1
+2015,Ukraine,UKR,3,46
+2015,United Arab Emirates,UAE,0,1
+2015,United States,USA,14,210
+2015,Uruguay,URU,1,6
+2015,Uzbekistan,UZB,2,20
+2015,Venezuela,VEN,0,11
+2015,Vietnam,VIE,0,3
+2015,Zimbabwe,ZIM,0,8
+2016,Algeria,ALG,0,8
+2016,Argentina,ARG,14,105
+2016,Armenia,ARM,0,1
+2016,Australia,AUS,7,91
+2016,Austria,AUT,2,38
+2016,Bahamas,BAH,0,1
+2016,Bahrain,BRN,0,1
+2016,Barbados,BAR,0,1
+2016,Belarus,BLR,1,21
+2016,Belgium,BEL,3,44
+2016,Benin,BEN,0,2
+2016,Bolivia,BOL,0,7
+2016,Bosnia-Herzegovina,BIH,2,6
+2016,Botswana,BOT,0,1
+2016,Brazil,BRA,5,71
+2016,Bulgaria,BUL,1,17
+2016,Burundi,BDI,0,2
+2016,Canada,CAN,4,35
+2016,Chile,CHI,0,37
+2016,China,CHN,2,52
+2016,Chinese Taipei,TPE,1,27
+2016,Colombia,COL,2,38
+2016,Croatia,CRO,5,31
+2016,Cyprus,CYP,1,6
+2016,Czechia,CZE,5,60
+2016,Denmark,DEN,0,9
+2016,Dominican Republic,DOM,1,10
+2016,Ecuador,ECU,0,7
+2016,Egypt,EGY,0,11
+2016,El Salvador,ESA,0,2
+2016,Estonia,EST,0,7
+2016,Finland,FIN,0,18
+2016,France,FRA,20,174
+2016,Georgia,GEO,1,8
+2016,Germany,GER,10,135
+2016,Ghana,GHA,0,1
+2016,Great Britain,GBR,4,83
+2016,Greece,GRE,0,16
+2016,Guadeloupe,GUD,0,1
+2016,Guatemala,GUA,0,3
+2016,Hong Kong,HKG,0,11
+2016,Hungary,HUN,1,13
+2016,India,IND,1,67
+2016,Indonesia,INA,0,7
+2016,Iran,IRI,0,4
+2016,Ireland,IRL,0,8
+2016,Israel,ISR,1,38
+2016,Italy,ITA,9,201
+2016,Jamaica,JAM,1,2
+2016,Japan,JPN,7,93
+2016,Kazakhstan,KAZ,2,18
+2016,Kosovo,KOS,0,1
+2016,Kuwait,KUW,0,6
+2016,Kyrgyzstan,KGZ,0,1
+2016,Latvia,LAT,1,9
+2016,Lebanon,LBN,0,2
+2016,Lithuania,LTU,1,9
+2016,Luxembourg,LUX,1,6
+2016,Madagascar,MAD,0,1
+2016,Malaysia,MAS,0,4
+2016,Mexico,MEX,1,28
+2016,Moldova,MDA,1,4
+2016,Monaco,MON,0,5
+2016,Montenegro,MNE,0,4
+2016,Morocco,MAR,0,18
+2016,Netherlands,NED,3,52
+2016,New Zealand,NZL,0,8
+2016,Nigeria,NGR,0,12
+2016,North Macedonia,MKD,0,7
+2016,Norway,NOR,0,7
+2016,Pakistan,PAK,0,4
+2016,Paraguay,PAR,0,3
+2016,Peru,PER,0,9
+2016,Philippines,PHI,0,6
+2016,Poland,POL,1,39
+2016,Portugal,POR,2,28
+2016,Puerto Rico,PUR,0,1
+2016,Qatar,QAT,0,2
+2016,Romania,ROU,1,50
+2016,Russia,RUS,9,102
+2016,San Marino,SMR,0,1
+2016,Saudi Arabia,KSA,0,1
+2016,Serbia,SRB,4,39
+2016,Sierra Leone,SLE,0,1
+2016,Singapore,SGP,0,2
+2016,Slovak Republic,SVK,4,30
+2016,Slovenia,SLO,1,15
+2016,South Africa,RSA,1,23
+2016,South Korea,KOR,1,50
+2016,Spain,ESP,18,126
+2016,Sri Lanka,SRI,0,3
+2016,Sweden,SWE,1,38
+2016,Switzerland,SUI,4,35
+2016,Thailand,THA,0,20
+2016,Togo,TOG,0,1
+2016,Tunisia,TUN,1,9
+2016,Turkiye,TUR,1,27
+2016,Turkmenistan,TKM,0,1
+2016,Uganda,UGA,0,1
+2016,Ukraine,UKR,3,45
+2016,United Arab Emirates,UAE,0,1
+2016,United States,USA,20,226
+2016,Uruguay,URU,1,7
+2016,Uzbekistan,UZB,1,18
+2016,Venezuela,VEN,0,6
+2016,Vietnam,VIE,0,6
+2016,Zimbabwe,ZIM,0,8
+2017,Algeria,ALG,0,3
+2017,Antigua,ANT,0,1
+2017,Argentina,ARG,12,97
+2017,Australia,AUS,10,87
+2017,Austria,AUT,4,43
+2017,Bahamas,BAH,0,1
+2017,Bahrain,BRN,0,2
+2017,Barbados,BAR,1,2
+2017,Belarus,BLR,1,18
+2017,Belgium,BEL,4,41
+2017,Benin,BEN,0,1
+2017,Bolivia,BOL,0,8
+2017,Bosnia-Herzegovina,BIH,2,6
+2017,Brazil,BRA,3,66
+2017,Bulgaria,BUL,1,16
+2017,Burkina Faso,BUR,0,1
+2017,Burundi,BDI,0,1
+2017,Canada,CAN,4,37
+2017,Chile,CHI,2,29
+2017,China,CHN,2,49
+2017,Chinese Taipei,TPE,1,27
+2017,Colombia,COL,1,29
+2017,Costa Rica,CRC,0,1
+2017,Croatia,CRO,3,34
+2017,Cuba,CUB,0,1
+2017,Curacao,CUW,0,1
+2017,Cyprus,CYP,1,4
+2017,Czechia,CZE,6,62
+2017,Denmark,DEN,0,10
+2017,Dominican Republic,DOM,1,8
+2017,Ecuador,ECU,0,8
+2017,Egypt,EGY,1,13
+2017,El Salvador,ESA,0,1
+2017,Estonia,EST,0,8
+2017,Finland,FIN,0,15
+2017,France,FRA,20,169
+2017,Georgia,GEO,1,8
+2017,Germany,GER,13,122
+2017,Great Britain,GBR,5,83
+2017,Greece,GRE,1,13
+2017,Guatemala,GUA,0,3
+2017,Hong Kong,HKG,0,10
+2017,Hungary,HUN,1,16
+2017,India,IND,2,60
+2017,Indonesia,INA,0,7
+2017,Iran,IRI,0,5
+2017,Ireland,IRL,0,9
+2017,Israel,ISR,1,35
+2017,Italy,ITA,10,178
+2017,Jamaica,JAM,1,2
+2017,Japan,JPN,8,92
+2017,Jordan,JOR,0,1
+2017,Kazakhstan,KAZ,2,16
+2017,Kosovo,KOS,0,1
+2017,Kuwait,KUW,0,4
+2017,Kyrgyzstan,KGZ,0,1
+2017,Latvia,LAT,1,11
+2017,Lebanon,LBN,0,2
+2017,Lithuania,LTU,1,6
+2017,Luxembourg,LUX,1,4
+2017,Madagascar,MAD,0,3
+2017,Malaysia,MAS,0,5
+2017,Mexico,MEX,1,33
+2017,Moldova,MDA,1,4
+2017,Monaco,MON,0,4
+2017,Montenegro,MNE,0,3
+2017,Morocco,MAR,0,18
+2017,Netherlands,NED,1,49
+2017,New Zealand,NZL,0,9
+2017,Nigeria,NGR,0,9
+2017,North Macedonia,MKD,0,6
+2017,Northern Mariana Islands,NMI,0,1
+2017,Norway,NOR,1,6
+2017,Pakistan,PAK,0,8
+2017,Paraguay,PAR,0,2
+2017,Peru,PER,0,14
+2017,Philippines,PHI,0,5
+2017,Poland,POL,1,37
+2017,Portugal,POR,3,28
+2017,Qatar,QAT,0,2
+2017,Romania,ROU,1,46
+2017,Russia,RUS,8,95
+2017,San Marino,SMR,0,1
+2017,Saudi Arabia,KSA,0,1
+2017,Serbia,SRB,6,35
+2017,Singapore,SGP,0,3
+2017,Slovak Republic,SVK,4,29
+2017,Slovenia,SLO,2,16
+2017,South Africa,RSA,1,21
+2017,South Korea,KOR,2,48
+2017,Spain,ESP,13,133
+2017,Sri Lanka,SRI,0,3
+2017,Sweden,SWE,1,34
+2017,Switzerland,SUI,4,38
+2017,Thailand,THA,0,24
+2017,Togo,TOG,0,1
+2017,Tunisia,TUN,1,9
+2017,Turkiye,TUR,0,21
+2017,Turkmenistan,TKM,0,1
+2017,Ukraine,UKR,3,39
+2017,United Arab Emirates,UAE,0,1
+2017,United States,USA,23,212
+2017,Uruguay,URU,1,9
+2017,Uzbekistan,UZB,1,17
+2017,Venezuela,VEN,0,8
+2017,Vietnam,VIE,0,6
+2017,Zimbabwe,ZIM,0,7
+2018,Algeria,ALG,0,3
+2018,Antigua,ANT,0,1
+2018,Argentina,ARG,12,92
+2018,Australia,AUS,13,84
+2018,Austria,AUT,6,35
+2018,Bahamas,BAH,0,3
+2018,Bahrain,BRN,0,2
+2018,Barbados,BAR,1,2
+2018,Belarus,BLR,3,21
+2018,Belgium,BEL,2,36
+2018,Benin,BEN,0,1
+2018,Bolivia,BOL,1,7
+2018,Bosnia-Herzegovina,BIH,2,8
+2018,Brazil,BRA,3,60
+2018,Bulgaria,BUL,1,12
+2018,Burkina Faso,BUR,0,1
+2018,Burundi,BDI,0,2
+2018,Cameroon,CMR,0,1
+2018,Canada,CAN,6,33
+2018,Chile,CHI,2,25
+2018,China,CHN,1,47
+2018,Chinese Taipei,TPE,1,24
+2018,Colombia,COL,2,19
+2018,Costa Rica,CRC,0,1
+2018,Croatia,CRO,4,28
+2018,Cuba,CUB,0,2
+2018,Curacao,CUW,0,1
+2018,Cyprus,CYP,1,2
+2018,Czechia,CZE,5,53
+2018,Denmark,DEN,0,6
+2018,Dominican Republic,DOM,1,7
+2018,Ecuador,ECU,0,11
+2018,Egypt,EGY,1,9
+2018,El Salvador,ESA,1,1
+2018,Estonia,EST,1,8
+2018,Finland,FIN,0,17
+2018,France,FRA,21,170
+2018,Georgia,GEO,1,8
+2018,Germany,GER,14,120
+2018,Great Britain,GBR,5,79
+2018,Greece,GRE,1,13
+2018,Guadeloupe,GUD,0,1
+2018,Guatemala,GUA,0,3
+2018,Hong Kong,HKG,0,9
+2018,Hungary,HUN,1,18
+2018,India,IND,3,60
+2018,Indonesia,INA,0,5
+2018,Iran,IRI,0,5
+2018,Ireland,IRL,0,8
+2018,Israel,ISR,1,34
+2018,Italy,ITA,14,194
+2018,Jamaica,JAM,1,2
+2018,Japan,JPN,6,90
+2018,Jordan,JOR,0,1
+2018,Kazakhstan,KAZ,2,15
+2018,Kenya,KEN,0,1
+2018,Kosovo,KOS,0,1
+2018,Kuwait,KUW,0,2
+2018,Kyrgyzstan,KGZ,0,1
+2018,Latvia,LAT,1,8
+2018,Lebanon,LBN,0,3
+2018,Libya,LBA,0,1
+2018,Lithuania,LTU,1,9
+2018,Luxembourg,LUX,1,7
+2018,Malaysia,MAS,0,4
+2018,Mexico,MEX,1,28
+2018,Moldova,MDA,1,3
+2018,Monaco,MON,0,4
+2018,Montenegro,MNE,0,4
+2018,Morocco,MAR,0,15
+2018,Namibia,NAM,0,1
+2018,Netherlands,NED,2,50
+2018,New Zealand,NZL,0,11
+2018,Nigeria,NGR,0,8
+2018,North Macedonia,MKD,0,6
+2018,Northern Mariana Islands,NMI,0,1
+2018,Norway,NOR,1,5
+2018,Pakistan,PAK,0,7
+2018,Paraguay,PAR,0,1
+2018,Peru,PER,0,15
+2018,Philippines,PHI,0,5
+2018,Poland,POL,2,30
+2018,Portugal,POR,3,30
+2018,Puerto Rico,PUR,0,1
+2018,Qatar,QAT,0,2
+2018,Romania,ROU,1,46
+2018,Russia,RUS,6,94
+2018,San Marino,SMR,0,1
+2018,Serbia,SRB,7,32
+2018,Singapore,SGP,0,3
+2018,Slovak Republic,SVK,4,28
+2018,Slovenia,SLO,2,15
+2018,South Africa,RSA,2,14
+2018,South Korea,KOR,2,50
+2018,Spain,ESP,16,128
+2018,Sri Lanka,SRI,0,3
+2018,Sweden,SWE,1,35
+2018,Switzerland,SUI,3,32
+2018,Thailand,THA,0,22
+2018,Togo,TOG,0,1
+2018,Tunisia,TUN,1,9
+2018,Turkiye,TUR,0,20
+2018,Turkmenistan,TKM,0,1
+2018,Uganda,UGA,0,1
+2018,Ukraine,UKR,2,38
+2018,United Arab Emirates,UAE,0,1
+2018,United States,USA,22,219
+2018,Uruguay,URU,1,9
+2018,Uzbekistan,UZB,1,18
+2018,Venezuela,VEN,0,6
+2018,Vietnam,VIE,0,5
+2018,Zimbabwe,ZIM,0,6
+2019,Algeria,ALG,0,6
+2019,Antigua,ANT,0,1
+2019,Argentina,ARG,9,90
+2019,Australia,AUS,12,68
+2019,Austria,AUT,3,32
+2019,Bahamas,BAH,0,3
+2019,Bahrain,BRN,0,1
+2019,Barbados,BAR,1,1
+2019,Belarus,BLR,2,15
+2019,Belgium,BEL,4,35
+2019,Benin,BEN,0,1
+2019,Bolivia,BOL,1,10
+2019,Bosnia-Herzegovina,BIH,2,8
+2019,Brazil,BRA,1,49
+2019,Bulgaria,BUL,1,19
+2019,Burundi,BDI,0,1
+2019,Canada,CAN,7,32
+2019,Chile,CHI,2,19
+2019,China,CHN,3,46
+2019,Chinese Taipei,TPE,1,19
+2019,Colombia,COL,2,26
+2019,Costa Rica,CRC,0,1
+2019,Croatia,CRO,4,26
+2019,Curacao,CUW,0,1
+2019,Cyprus,CYP,1,3
+2019,Czechia,CZE,2,50
+2019,Denmark,DEN,1,8
+2019,Dominican Republic,DOM,0,8
+2019,Ecuador,ECU,1,12
+2019,Egypt,EGY,1,11
+2019,El Salvador,ESA,0,3
+2019,Estonia,EST,0,8
+2019,Finland,FIN,0,12
+2019,France,FRA,18,155
+2019,Georgia,GEO,1,8
+2019,Germany,GER,16,104
+2019,Ghana,GHA,0,2
+2019,Great Britain,GBR,6,75
+2019,Greece,GRE,1,16
+2019,Guatemala,GUA,0,3
+2019,Hong Kong,HKG,0,6
+2019,Hungary,HUN,2,16
+2019,India,IND,3,55
+2019,Indonesia,INA,0,4
+2019,Iran,IRI,0,2
+2019,Ireland,IRL,0,6
+2019,Israel,ISR,0,26
+2019,Italy,ITA,17,181
+2019,Ivory Coast,CIV,0,1
+2019,Jamaica,JAM,1,3
+2019,Japan,JPN,9,85
+2019,Jordan,JOR,0,1
+2019,Kazakhstan,KAZ,2,14
+2019,Kenya,KEN,0,2
+2019,Kosovo,KOS,0,1
+2019,Kuwait,KUW,0,2
+2019,Latvia,LAT,1,6
+2019,Lebanon,LBN,0,3
+2019,Lithuania,LTU,1,8
+2019,Luxembourg,LUX,0,2
+2019,Madagascar,MAD,0,1
+2019,Malaysia,MAS,0,3
+2019,Mexico,MEX,1,21
+2019,Moldova,MDA,1,3
+2019,Monaco,MON,0,4
+2019,Montenegro,MNE,0,3
+2019,Morocco,MAR,1,12
+2019,Mozambique,MOZ,0,1
+2019,Namibia,NAM,0,1
+2019,Netherlands,NED,2,47
+2019,New Zealand,NZL,0,14
+2019,Nigeria,NGR,0,5
+2019,North Macedonia,MKD,0,5
+2019,Northern Mariana Islands,NMI,0,1
+2019,Norway,NOR,1,5
+2019,Pakistan,PAK,0,4
+2019,Paraguay,PAR,0,3
+2019,Peru,PER,0,15
+2019,Philippines,PHI,0,5
+2019,Poland,POL,2,29
+2019,Portugal,POR,3,30
+2019,Qatar,QAT,0,3
+2019,Romania,ROU,1,40
+2019,Russia,RUS,5,85
+2019,San Marino,SMR,0,1
+2019,Serbia,SRB,8,39
+2019,Singapore,SGP,0,3
+2019,Slovak Republic,SVK,5,24
+2019,Slovenia,SLO,2,11
+2019,South Africa,RSA,2,18
+2019,South Korea,KOR,2,35
+2019,Spain,ESP,15,118
+2019,Sweden,SWE,2,38
+2019,Switzerland,SUI,3,35
+2019,Syria,SYR,0,1
+2019,Thailand,THA,0,20
+2019,Togo,TOG,0,1
+2019,Tunisia,TUN,1,9
+2019,Turkiye,TUR,0,18
+2019,Turkmenistan,TKM,0,1
+2019,Ukraine,UKR,1,38
+2019,United States,USA,20,213
+2019,Uruguay,URU,1,6
+2019,Uzbekistan,UZB,1,15
+2019,Venezuela,VEN,0,5
+2019,Vietnam,VIE,0,4
+2019,Zimbabwe,ZIM,0,6
+2020,Algeria,ALG,0,2
+2020,Antigua,ANT,0,1
+2020,Argentina,ARG,7,66
+2020,Australia,AUS,11,49
+2020,Austria,AUT,4,21
+2020,Bahamas,BAH,0,1
+2020,Barbados,BAR,0,1
+2020,Belarus,BLR,2,12
+2020,Belgium,BEL,3,26
+2020,Bolivia,BOL,1,5
+2020,Bosnia-Herzegovina,BIH,1,7
+2020,Brazil,BRA,2,31
+2020,Bulgaria,BUL,2,10
+2020,Canada,CAN,5,21
+2020,Chile,CHI,2,14
+2020,China,CHN,0,13
+2020,Chinese Taipei,TPE,1,12
+2020,Colombia,COL,1,11
+2020,Costa Rica,CRC,0,3
+2020,Croatia,CRO,3,15
+2020,Curacao,CUW,0,1
+2020,Cyprus,CYP,0,1
+2020,Czechia,CZE,2,35
+2020,Denmark,DEN,0,3
+2020,Dominican Republic,DOM,0,6
+2020,Ecuador,ECU,1,6
+2020,Egypt,EGY,1,7
+2020,El Salvador,ESA,0,1
+2020,Estonia,EST,0,6
+2020,Finland,FIN,1,7
+2020,France,FRA,16,143
+2020,Georgia,GEO,1,5
+2020,Germany,GER,9,75
+2020,Great Britain,GBR,5,46
+2020,Greece,GRE,1,12
+2020,Guatemala,GUA,0,1
+2020,Hong Kong,HKG,0,4
+2020,Hungary,HUN,2,12
+2020,India,IND,2,39
+2020,Indonesia,INA,0,3
+2020,Ireland,IRL,0,4
+2020,Israel,ISR,0,12
+2020,Italy,ITA,15,111
+2020,Ivory Coast,CIV,0,1
+2020,Jamaica,JAM,0,3
+2020,Japan,JPN,7,44
+2020,Jordan,JOR,0,2
+2020,Kazakhstan,KAZ,3,14
+2020,Kenya,KEN,0,2
+2020,Latvia,LAT,1,4
+2020,Lebanon,LBN,0,2
+2020,Lithuania,LTU,1,4
+2020,Malaysia,MAS,0,2
+2020,Mexico,MEX,1,9
+2020,Moldova,MDA,1,4
+2020,Monaco,MON,0,3
+2020,Montenegro,MNE,0,2
+2020,Morocco,MAR,1,7
+2020,Netherlands,NED,1,27
+2020,New Zealand,NZL,0,6
+2020,North Macedonia,MKD,0,3
+2020,Northern Mariana Islands,NMI,0,1
+2020,Norway,NOR,1,6
+2020,Pakistan,PAK,0,2
+2020,Paraguay,PAR,0,2
+2020,Peru,PER,0,10
+2020,Philippines,PHI,0,3
+2020,Poland,POL,2,21
+2020,Portugal,POR,2,18
+2020,Qatar,QAT,0,2
+2020,Romania,ROU,0,28
+2020,Russia,RUS,6,69
+2020,Serbia,SRB,7,16
+2020,Singapore,SGP,0,1
+2020,Slovak Republic,SVK,3,16
+2020,Slovenia,SLO,1,8
+2020,South Africa,RSA,2,14
+2020,South Korea,KOR,1,8
+2020,Spain,ESP,12,72
+2020,Sri Lanka,SRI,0,2
+2020,Sweden,SWE,1,21
+2020,Switzerland,SUI,3,25
+2020,Syria,SYR,0,1
+2020,Thailand,THA,0,11
+2020,Tunisia,TUN,0,8
+2020,Turkiye,TUR,0,19
+2020,Ukraine,UKR,0,27
+2020,United States,USA,21,133
+2020,Uruguay,URU,1,5
+2020,Uzbekistan,UZB,0,7
+2020,Venezuela,VEN,0,5
+2020,Vietnam,VIE,0,3
+2020,Zimbabwe,ZIM,0,5
+2021,Algeria,ALG,0,5
+2021,Antigua,ANT,0,1
+2021,Argentina,ARG,13,88
+2021,Australia,AUS,14,43
+2021,Austria,AUT,4,26
+2021,Bahamas,BAH,0,1
+2021,Bahrain,BRN,0,2
+2021,Barbados,BAR,0,2
+2021,Belarus,BLR,2,14
+2021,Belgium,BEL,3,31
+2021,Bolivia,BOL,1,11
+2021,Bosnia-Herzegovina,BIH,1,9
+2021,Brazil,BRA,4,56
+2021,Bulgaria,BUL,1,21
+2021,Burundi,BDI,0,1
+2021,Canada,CAN,6,23
+2021,Chile,CHI,3,26
+2021,China,CHN,1,10
+2021,Chinese Taipei,TPE,2,14
+2021,Colombia,COL,1,25
+2021,Costa Rica,CRC,0,1
+2021,Croatia,CRO,4,25
+2021,Cuba,CUB,0,1
+2021,Cyprus,CYP,0,4
+2021,Czechia,CZE,4,50
+2021,Denmark,DEN,2,14
+2021,Dominican Republic,DOM,0,4
+2021,Ecuador,ECU,1,11
+2021,Egypt,EGY,0,9
+2021,El Salvador,ESA,0,1
+2021,Estonia,EST,0,8
+2021,Finland,FIN,1,11
+2021,France,FRA,23,161
+2021,Georgia,GEO,1,6
+2021,Germany,GER,14,101
+2021,Great Britain,GBR,6,68
+2021,Greece,GRE,1,16
+2021,Guatemala,GUA,0,2
+2021,Hong Kong,HKG,0,1
+2021,Hungary,HUN,1,15
+2021,India,IND,3,57
+2021,Indonesia,INA,0,2
+2021,Iran,IRI,0,1
+2021,Ireland,IRL,0,3
+2021,Israel,ISR,0,25
+2021,Italy,ITA,16,175
+2021,Ivory Coast,CIV,0,1
+2021,Jamaica,JAM,0,3
+2021,Japan,JPN,5,58
+2021,Jordan,JOR,0,2
+2021,Kazakhstan,KAZ,3,18
+2021,Kuwait,KUW,0,4
+2021,Latvia,LAT,1,4
+2021,Lebanon,LBN,0,2
+2021,Libya,LBA,0,1
+2021,Lithuania,LTU,1,12
+2021,Luxembourg,LUX,0,4
+2021,Madagascar,MAD,0,1
+2021,Malaysia,MAS,0,1
+2021,Mexico,MEX,1,13
+2021,Moldova,MDA,1,4
+2021,Monaco,MON,0,3
+2021,Montenegro,MNE,0,3
+2021,Morocco,MAR,0,6
+2021,Mozambique,MOZ,0,1
+2021,Namibia,NAM,0,1
+2021,Netherlands,NED,3,40
+2021,New Zealand,NZL,0,5
+2021,Nigeria,NGR,0,1
+2021,North Macedonia,MKD,0,7
+2021,Northern Mariana Islands,NMI,0,1
+2021,Norway,NOR,1,5
+2021,Pakistan,PAK,0,3
+2021,Paraguay,PAR,0,4
+2021,Peru,PER,1,13
+2021,Philippines,PHI,0,1
+2021,Poland,POL,3,31
+2021,Portugal,POR,3,27
+2021,Qatar,QAT,0,3
+2021,Romania,ROU,1,36
+2021,Russia,RUS,6,85
+2021,San Marino,SMR,0,1
+2021,Saudi Arabia,KSA,0,1
+2021,Senegal,SEN,0,1
+2021,Serbia,SRB,8,41
+2021,Singapore,SGP,0,2
+2021,Slovak Republic,SVK,6,21
+2021,Slovenia,SLO,2,11
+2021,South Africa,RSA,2,16
+2021,South Korea,KOR,1,11
+2021,Spain,ESP,14,98
+2021,Sweden,SWE,2,21
+2021,Switzerland,SUI,4,38
+2021,Syria,SYR,0,1
+2021,Thailand,THA,0,9
+2021,Togo,TOG,0,1
+2021,Tunisia,TUN,0,8
+2021,Turkiye,TUR,2,21
+2021,Ukraine,UKR,2,31
+2021,United Arab Emirates,UAE,0,1
+2021,United States,USA,23,182
+2021,Uruguay,URU,1,7
+2021,Uzbekistan,UZB,1,10
+2021,Venezuela,VEN,0,4
+2021,Vietnam,VIE,0,1
+2021,Zimbabwe,ZIM,0,3
+2022,Algeria,ALG,0,8
+2022,Antigua,ANT,0,1
+2022,Argentina,ARG,18,101
+2022,Australia,AUS,12,97
+2022,Austria,AUT,5,33
+2022,Bahamas,BAH,0,2
+2022,Barbados,BAR,0,2
+2022,Belarus,BLR,2,16
+2022,Belgium,BEL,2,31
+2022,Benin,BEN,0,1
+2022,Bolivia,BOL,1,10
+2022,Bosnia-Herzegovina,BIH,1,10
+2022,Brazil,BRA,3,56
+2022,Bulgaria,BUL,2,23
+2022,Burkina Faso,BUR,0,1
+2022,Burundi,BDI,0,1
+2022,Cambodia,CAM,0,1
+2022,Canada,CAN,4,30
+2022,Chile,CHI,4,26
+2022,China,CHN,2,37
+2022,Chinese Taipei,TPE,3,17
+2022,Colombia,COL,1,24
+2022,Costa Rica,CRC,0,1
+2022,Croatia,CRO,4,26
+2022,Cyprus,CYP,0,5
+2022,Czechia,CZE,6,59
+2022,Denmark,DEN,1,12
+2022,Dominican Republic,DOM,0,6
+2022,Ecuador,ECU,1,12
+2022,Egypt,EGY,0,12
+2022,El Salvador,ESA,0,2
+2022,Estonia,EST,0,9
+2022,Finland,FIN,1,13
+2022,France,FRA,20,183
+2022,Georgia,GEO,1,7
+2022,Germany,GER,13,117
+2022,Ghana,GHA,0,2
+2022,Great Britain,GBR,9,98
+2022,Greece,GRE,1,15
+2022,Guadeloupe,GUD,0,1
+2022,Guatemala,GUA,0,4
+2022,Hong Kong,HKG,0,3
+2022,Hungary,HUN,3,15
+2022,India,IND,2,62
+2022,Indonesia,INA,0,7
+2022,Iran,IRI,0,1
+2022,Ireland,IRL,0,5
+2022,Israel,ISR,0,32
+2022,Italy,ITA,21,208
+2022,Ivory Coast,CIV,0,1
+2022,Jamaica,JAM,0,3
+2022,Japan,JPN,3,83
+2022,Jordan,JOR,0,2
+2022,Kazakhstan,KAZ,5,17
+2022,Kuwait,KUW,0,3
+2022,Latvia,LAT,0,5
+2022,Lebanon,LBN,0,1
+2022,Lithuania,LTU,1,10
+2022,Luxembourg,LUX,0,4
+2022,Madagascar,MAD,0,1
+2022,Malaysia,MAS,0,6
+2022,Mexico,MEX,1,25
+2022,Moldova,MDA,1,4
+2022,Monaco,MON,0,4
+2022,Montenegro,MNE,0,3
+2022,Morocco,MAR,0,17
+2022,Namibia,NAM,0,1
+2022,Netherlands,NED,5,46
+2022,New Zealand,NZL,0,13
+2022,Nigeria,NGR,0,1
+2022,North Macedonia,MKD,0,7
+2022,Northern Mariana Islands,NMI,0,1
+2022,Norway,NOR,1,5
+2022,Pakistan,PAK,0,4
+2022,Paraguay,PAR,0,3
+2022,Peru,PER,1,16
+2022,Philippines,PHI,0,2
+2022,Poland,POL,2,40
+2022,Portugal,POR,4,34
+2022,Romania,ROU,0,40
+2022,Russia,RUS,6,72
+2022,San Marino,SMR,0,1
+2022,Saudi Arabia,KSA,0,1
+2022,Senegal,SEN,0,1
+2022,Serbia,SRB,6,38
+2022,Slovak Republic,SVK,4,21
+2022,Slovenia,SLO,1,17
+2022,South Africa,RSA,2,14
+2022,South Korea,KOR,1,30
+2022,Spain,ESP,13,114
+2022,Sri Lanka,SRI,0,1
+2022,Sweden,SWE,2,32
+2022,Switzerland,SUI,6,45
+2022,Syria,SYR,0,1
+2022,Thailand,THA,0,21
+2022,Togo,TOG,0,1
+2022,Tunisia,TUN,0,7
+2022,Turkiye,TUR,1,25
+2022,Ukraine,UKR,0,25
+2022,United States,USA,26,227
+2022,Uruguay,URU,1,8
+2022,Uzbekistan,UZB,0,9
+2022,Venezuela,VEN,0,5
+2022,Vietnam,VIE,0,7
+2022,Zimbabwe,ZIM,0,4
+2023,Algeria,ALG,0,4
+2023,Antigua,ANT,0,1
+2023,Argentina,ARG,20,107
+2023,Armenia,ARM,0,1
+2023,Australia,AUS,15,90
+2023,Austria,AUT,5,31
+2023,Azerbaijan,AZE,0,1
+2023,Bahamas,BAH,0,2
+2023,Bahrain,BRN,0,1
+2023,Barbados,BAR,0,2
+2023,Belarus,BLR,2,12
+2023,Belgium,BEL,5,29
+2023,Bolivia,BOL,1,7
+2023,Bosnia-Herzegovina,BIH,1,10
+2023,Brazil,BRA,3,59
+2023,Bulgaria,BUL,3,27
+2023,Burundi,BDI,0,1
+2023,Cambodia,CAM,0,1
+2023,Canada,CAN,6,39
+2023,Chile,CHI,4,25
+2023,China,CHN,3,56
+2023,Chinese Taipei,TPE,3,21
+2023,Colombia,COL,1,20
+2023,Costa Rica,CRC,0,1
+2023,Croatia,CRO,2,27
+2023,Curacao,CUW,0,1
+2023,Cyprus,CYP,0,6
+2023,Czechia,CZE,7,64
+2023,Denmark,DEN,1,12
+2023,Dominican Republic,DOM,0,4
+2023,Ecuador,ECU,1,9
+2023,Egypt,EGY,0,10
+2023,El Salvador,ESA,0,3
+2023,Estonia,EST,0,7
+2023,Finland,FIN,2,12
+2023,France,FRA,28,183
+2023,Georgia,GEO,1,8
+2023,Germany,GER,7,120
+2023,Ghana,GHA,0,2
+2023,Great Britain,GBR,10,92
+2023,Greece,GRE,1,15
+2023,Guadeloupe,GUD,0,2
+2023,Guatemala,GUA,0,1
+2023,Hong Kong,HKG,0,3
+2023,Hungary,HUN,3,18
+2023,India,IND,1,55
+2023,Indonesia,INA,0,8
+2023,Iran,IRI,0,8
+2023,Ireland,IRL,0,7
+2023,Israel,ISR,0,22
+2023,Italy,ITA,23,202
+2023,Ivory Coast,CIV,0,1
+2023,Jamaica,JAM,0,3
+2023,Japan,JPN,7,92
+2023,Jordan,JOR,1,3
+2023,Kazakhstan,KAZ,4,17
+2023,Kenya,KEN,0,1
+2023,Kuwait,KUW,0,3
+2023,Latvia,LAT,0,4
+2023,Lebanon,LBN,0,3
+2023,Lithuania,LTU,0,7
+2023,Luxembourg,LUX,0,6
+2023,Madagascar,MAD,0,1
+2023,Malaysia,MAS,0,4
+2023,Malta,MLT,0,3
+2023,Mexico,MEX,0,21
+2023,Moldova,MDA,1,4
+2023,Monaco,MON,0,4
+2023,Montenegro,MNE,0,2
+2023,Morocco,MAR,0,14
+2023,Netherlands,NED,4,53
+2023,New Zealand,NZL,0,13
+2023,Nigeria,NGR,0,1
+2023,North Macedonia,MKD,0,7
+2023,Northern Mariana Islands,NMI,0,1
+2023,Norway,NOR,1,6
+2023,Pakistan,PAK,0,5
+2023,Paraguay,PAR,0,3
+2023,Peru,PER,1,12
+2023,Philippines,PHI,0,2
+2023,Poland,POL,1,41
+2023,Portugal,POR,3,34
+2023,Puerto Rico,PUR,0,1
+2023,Qatar,QAT,0,2
+2023,Romania,ROU,1,39
+2023,Russia,RUS,7,79
+2023,San Marino,SMR,0,1
+2023,Saudi Arabia,KSA,0,1
+2023,Senegal,SEN,0,1
+2023,Serbia,SRB,6,40
+2023,Singapore,SGP,0,3
+2023,Slovak Republic,SVK,4,22
+2023,Slovenia,SLO,0,18
+2023,South Africa,RSA,1,10
+2023,South Korea,KOR,2,33
+2023,Spain,ESP,10,116
+2023,Sweden,SWE,2,31
+2023,Switzerland,SUI,6,49
+2023,Syria,SYR,0,1
+2023,Thailand,THA,0,20
+2023,Togo,TOG,0,2
+2023,Tunisia,TUN,0,8
+2023,Turkiye,TUR,1,25
+2023,Ukraine,UKR,1,25
+2023,United States,USA,24,254
+2023,Uruguay,URU,0,8
+2023,Uzbekistan,UZB,0,7
+2023,Venezuela,VEN,0,5
+2023,Vietnam,VIE,0,5
+2023,Zimbabwe,ZIM,0,4
+2024,Algeria,ALG,0,3
+2024,Angola,ANG,0,1
+2024,Antigua,ANT,0,1
+2024,Argentina,ARG,16,101
+2024,Armenia,ARM,0,2
+2024,Australia,AUS,17,90
+2024,Austria,AUT,4,35
+2024,Azerbaijan,AZE,0,1
+2024,Bahamas,BAH,0,1
+2024,Bahrain,BRN,0,1
+2024,Barbados,BAR,0,1
+2024,Belarus,BLR,0,14
+2024,Belgium,BEL,3,29
+2024,Bermuda,BER,0,1
+2024,Bolivia,BOL,2,7
+2024,Bosnia-Herzegovina,BIH,1,10
+2024,Brazil,BRA,5,65
+2024,Bulgaria,BUL,2,30
+2024,Burundi,BDI,0,1
+2024,Cameroon,CMR,0,1
+2024,Canada,CAN,5,33
+2024,Chile,CHI,4,22
+2024,China,CHN,3,55
+2024,Chinese Taipei,TPE,2,18
+2024,Colombia,COL,1,21
+2024,Costa Rica,CRC,0,2
+2024,Croatia,CRO,4,28
+2024,Curacao,CUW,0,1
+2024,Cyprus,CYP,0,7
+2024,Czechia,CZE,6,55
+2024,Denmark,DEN,1,12
+2024,Dominican Republic,DOM,1,4
+2024,Ecuador,ECU,0,7
+2024,Egypt,EGY,0,8
+2024,El Salvador,ESA,0,3
+2024,Estonia,EST,1,6
+2024,Finland,FIN,2,9
+2024,France,FRA,32,192
+2024,Gabon,GAB,0,1
+2024,Georgia,GEO,0,7
+2024,Germany,GER,8,112
+2024,Ghana,GHA,0,2
+2024,Great Britain,GBR,11,95
+2024,Greece,GRE,1,14
+2024,Guadeloupe,GUD,0,2
+2024,Guatemala,GUA,0,2
+2024,Hong Kong,HKG,1,7
+2024,Hungary,HUN,3,23
+2024,India,IND,1,62
+2024,Indonesia,INA,0,5
+2024,Iran,IRI,0,10
+2024,Ireland,IRL,0,7
+2024,Israel,ISR,0,13
+2024,Italy,ITA,18,206
+2024,Ivory Coast,CIV,0,1
+2024,Jamaica,JAM,0,3
+2024,Japan,JPN,7,89
+2024,Jordan,JOR,1,4
+2024,Kazakhstan,KAZ,7,15
+2024,Kenya,KEN,0,1
+2024,Kosovo,KOS,0,1
+2024,Kuwait,KUW,0,1
+2024,Latvia,LAT,0,3
+2024,Lebanon,LBN,0,4
+2024,Libya,LBA,0,1
+2024,Lithuania,LTU,1,6
+2024,Luxembourg,LUX,0,5
+2024,Malaysia,MAS,0,3
+2024,Malta,MLT,0,2
+2024,Mexico,MEX,0,27
+2024,Moldova,MDA,1,4
+2024,Monaco,MON,1,6
+2024,Montenegro,MNE,0,1
+2024,Morocco,MAR,0,16
+2024,Mozambique,MOZ,0,1
+2024,Namibia,NAM,0,1
+2024,Netherlands,NED,4,52
+2024,New Zealand,NZL,0,14
+2024,Nicaragua,NCA,0,1
+2024,Nigeria,NGR,0,1
+2024,North Macedonia,MKD,0,7
+2024,Northern Mariana Islands,NMI,0,1
+2024,Norway,NOR,1,7
+2024,Pakistan,PAK,0,3
+2024,Paraguay,PAR,0,4
+2024,Peru,PER,1,14
+2024,Philippines,PHI,0,1
+2024,Poland,POL,3,43
+2024,Portugal,POR,3,32
+2024,Puerto Rico,PUR,0,1
+2024,Qatar,QAT,0,2
+2024,Romania,ROU,0,41
+2024,Russia,RUS,7,87
+2024,Saudi Arabia,KSA,0,1
+2024,Senegal,SEN,0,1
+2024,Serbia,SRB,5,40
+2024,Singapore,SGP,0,4
+2024,Slovak Republic,SVK,2,21
+2024,Slovenia,SLO,0,18
+2024,South Africa,RSA,1,19
+2024,South Korea,KOR,2,34
+2024,Spain,ESP,13,119
+2024,Sweden,SWE,1,30
+2024,Switzerland,SUI,6,49
+2024,Syria,SYR,0,1
+2024,Thailand,THA,0,19
+2024,Togo,TOG,0,3
+2024,Tunisia,TUN,1,7
+2024,Turkiye,TUR,0,23
+2024,Ukraine,UKR,1,23
+2024,United States,USA,28,258
+2024,Uruguay,URU,0,8
+2024,Uzbekistan,UZB,0,6
+2024,Venezuela,VEN,0,5
+2024,Vietnam,VIE,0,3
+2024,Zimbabwe,ZIM,0,4
+2025,Algeria,ALG,0,3
+2025,Angola,ANG,0,1
+2025,Argentina,ARG,18,105
+2025,Armenia,ARM,0,2
+2025,Australia,AUS,17,79
+2025,Austria,AUT,4,29
+2025,Azerbaijan,AZE,0,1
+2025,Bahamas,BAH,0,1
+2025,Bahrain,BRN,0,1
+2025,Barbados,BAR,0,2
+2025,Belarus,BLR,0,15
+2025,Belgium,BEL,6,27
+2025,Benin,BEN,0,1
+2025,Bermuda,BER,0,2
+2025,Bolivia,BOL,2,11
+2025,Bosnia-Herzegovina,BIH,1,9
+2025,Brazil,BRA,4,72
+2025,Bulgaria,BUL,1,23
+2025,Burkina Faso,BUR,0,1
+2025,Canada,CAN,5,33
+2025,Chile,CHI,4,24
+2025,China,CHN,6,56
+2025,Chinese Taipei,TPE,1,16
+2025,Colombia,COL,2,25
+2025,Costa Rica,CRC,0,1
+2025,Croatia,CRO,5,22
+2025,Cyprus,CYP,0,5
+2025,Czechia,CZE,5,45
+2025,Denmark,DEN,3,12
+2025,Dominican Republic,DOM,0,4
+2025,Ecuador,ECU,1,5
+2025,Egypt,EGY,0,11
+2025,El Salvador,ESA,0,4
+2025,Estonia,EST,1,4
+2025,Finland,FIN,2,12
+2025,France,FRA,32,189
+2025,Gabon,GAB,0,1
+2025,Georgia,GEO,1,4
+2025,Germany,GER,7,118
+2025,Ghana,GHA,0,2
+2025,Great Britain,GBR,14,96
+2025,Greece,GRE,1,15
+2025,Guadeloupe,GUD,0,1
+2025,Guatemala,GUA,0,2
+2025,Hong Kong,HKG,1,7
+2025,Hungary,HUN,3,24
+2025,India,IND,1,54
+2025,Indonesia,INA,0,7
+2025,Iran,IRI,0,6
+2025,Ireland,IRL,0,7
+2025,Israel,ISR,0,7
+2025,Italy,ITA,19,190
+2025,Ivory Coast,CIV,0,1
+2025,Jamaica,JAM,0,3
+2025,Japan,JPN,10,91
+2025,Jordan,JOR,0,3
+2025,Kazakhstan,KAZ,6,14
+2025,Kosovo,KOS,0,1
+2025,Kuwait,KUW,0,3
+2025,Latvia,LAT,0,4
+2025,Lebanon,LBN,1,4
+2025,Libya,LBA,0,1
+2025,Lithuania,LTU,2,7
+2025,Luxembourg,LUX,1,5
+2025,Malaysia,MAS,0,4
+2025,Malta,MLT,0,3
+2025,Mexico,MEX,1,26
+2025,Moldova,MDA,0,2
+2025,Monaco,MON,1,4
+2025,Montenegro,MNE,0,1
+2025,Morocco,MAR,0,14
+2025,Namibia,NAM,0,1
+2025,Netherlands,NED,4,47
+2025,New Zealand,NZL,0,13
+2025,Nicaragua,NCA,0,1
+2025,Nigeria,NGR,0,1
+2025,North Macedonia,MKD,0,5
+2025,Northern Mariana Islands,NMI,0,1
+2025,Norway,NOR,3,12
+2025,Pakistan,PAK,0,5
+2025,Paraguay,PAR,1,4
+2025,Peru,PER,1,11
+2025,Philippines,PHI,0,5
+2025,Poland,POL,2,40
+2025,Portugal,POR,3,30
+2025,Puerto Rico,PUR,0,1
+2025,Qatar,QAT,0,1
+2025,Romania,ROU,1,38
+2025,Russia,RUS,6,78
+2025,Saudi Arabia,KSA,0,1
+2025,Senegal,SEN,0,1
+2025,Serbia,SRB,5,36
+2025,Singapore,SGP,0,4
+2025,Slovak Republic,SVK,2,19
+2025,Slovenia,SLO,0,20
+2025,South Africa,RSA,1,16
+2025,South Korea,KOR,0,34
+2025,Spain,ESP,16,110
+2025,Sweden,SWE,1,35
+2025,Switzerland,SUI,5,44
+2025,Syria,SYR,0,1
+2025,Thailand,THA,1,19
+2025,Togo,TOG,0,2
+2025,Tunisia,TUN,2,8
+2025,Turkiye,TUR,0,25
+2025,Ukraine,UKR,1,22
+2025,United States,USA,29,250
+2025,Uruguay,URU,0,7
+2025,Uzbekistan,UZB,0,10
+2025,Venezuela,VEN,0,7
+2025,Vietnam,VIE,0,1
+2025,Zimbabwe,ZIM,0,2
