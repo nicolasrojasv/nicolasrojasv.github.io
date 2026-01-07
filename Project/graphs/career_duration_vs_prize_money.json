@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": {
+    "text": "Career duration and cumulative prize money of retired players",
+    "subtitle": "Filter by cumulative prize money (2025 USD) using the slider"
+  },
+  "width": 560,
+  "height": 400,
+  "background": "white",
+  "view": {"stroke": null},
+  "data": {
+    "url": "https://raw.githubusercontent.com/nicolasrojasv/nicolasrojasv.github.io/main/Project/data/retired_players.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "prize_max",
+      "value": 190000000,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 190000000,
+        "step": 5000,
+        "name": "Max cumulative prize (2025 USD): "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.total_prize_usd_2025 != null && datum.years_on_tour != null"},
+    {"filter": "datum.total_prize_usd_2025 <= prize_max"}
+  ],
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "mouseover", "nearest": true, "clear": "mouseout"}
+        }
+      ],
+      "mark": {"type": "circle", "size": 60},
+      "encoding": {
+        "x": {
+          "field": "total_prize_usd_2025",
+          "type": "quantitative",
+          "title": "Cumulative prize money (USD, 2025)",
+          "axis": {"format": ",.0f", "grid": true, "tickCount": 6}
+        },
+        "y": {
+          "field": "years_on_tour",
+          "type": "quantitative",
+          "title": "Career duration (years)",
+          "axis": {"grid": true}
+        },
+        "strokeWidth": {
+          "condition": {"param": "hover", "value": 1.2},
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "name", "type": "nominal", "title": "Player"},
+          {"field": "years_on_tour", "type": "quantitative", "title": "Years on tour"},
+          {
+            "field": "total_prize_usd_2025",
+            "type": "quantitative",
+            "title": "Cumulative prize (USD, 2025)",
+            "format": ",.0f"
+          },
+          {"field": "first_year", "type": "quantitative", "title": "First year"},
+          {"field": "last_year", "type": "quantitative", "title": "Last year"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "loess": "years_on_tour",
+          "on": "total_prize_usd_2025",
+          "bandwidth": 0.5
+        }
+      ],
+      "mark": {"type": "line", "strokeWidth": 2, "opacity": 0.9},
+      "encoding": {
+        "x": {"field": "total_prize_usd_2025", "type": "quantitative"},
+        "y": {"field": "years_on_tour", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 12, "titleFontSize": 13, "titlePadding": 10},
+    "title": {"fontSize": 16, "subtitleFontSize": 12, "anchor": "start"}
+  }
+}
+
